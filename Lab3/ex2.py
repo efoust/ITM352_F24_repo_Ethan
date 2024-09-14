@@ -11,3 +11,4 @@ number1 = float(number1)
 
 mid = midpoint(number1,number2)
 print("The midpoint is: ", mid)
+
