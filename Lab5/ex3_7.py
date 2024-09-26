@@ -13,3 +13,4 @@ print(tripDictionary["miles"][2],tripDictionary["fares"][2])
 
 zippedDictionary = dict(zip(tripDuration,tripFares))
 print(f"Trip Duration ={tripDuration[2]} cost = {zippedDictionary[tripDuration[2]]}")
+ 
