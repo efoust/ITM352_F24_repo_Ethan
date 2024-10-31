@@ -154,7 +154,7 @@ def Total_Sales_quantity_and_Price_by_region_and_Product(data):
         values = ['quantity', 'total_sales_price'],
         aggfunc= {'quantity': 'sum', 'total_sales_price': 'sum'},
         fill_value = 0)
-        pivot_table.index = ['Sales Region', 'Product Type']
+        pivot_table.index.names = ['Sales Region', 'Product Type']
         pivot_table.columns = ['Total Quantity', 'Total Sales Price']
         print(pivot_table)
         pivot_table.to_csv('Option5.csv')
