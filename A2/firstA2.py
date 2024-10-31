@@ -88,6 +88,9 @@ def display_menu(data):
         ("Average Sales per region with average sales by state and sale type", Avg_Sales),
         ("Sales by customer type and order type by state", Sales_by_customer_type),
         ("Total Sales quantity and price by region and product",Total_Sales_quantity_and_Price_by_region_and_Product),
+        ("Total Sales Quantity and Price by Customer Type",Total_Sales_quantity_and_Price_by_Customer_Type),
+        ("Minium and Maximum Sales Price by Category",Min_Max_Sales_price_by_catagory),
+        ("Number of Unique Employees by Region",Unique_employees_by_region),
         ("Exit the program", exit_program)    
     )
 
@@ -161,6 +164,58 @@ def Total_Sales_quantity_and_Price_by_region_and_Product(data):
         return pivot_table
     except Exception as e:
         print(f"An unexpected error occured: {e}")
+
+#Option 6: Total Sales Quantity and price by customer type. 
+def Total_Sales_quantity_and_Price_by_Customer_Type(data):
+    try:
+        data['total_sales_price'] = data['quantity'] * data['unit_price']
+        pivot_table = pd.pivot_table(data,
+        index = 'customer_type', 
+        values = ['quantity', 'total_sales_price'],
+        aggfunc= {'quantity': 'sum', 'total_sales_price': 'sum'},
+        fill_value = 0)
+        pivot_table.index.name = 'Customer Type'
+        pivot_table.columns = ['Total Quantity', 'Total Sales Price']
+        print(pivot_table)
+        pivot_table.to_csv('Option6.csv')
+        return pivot_table
+    except Exception as e:
+        print(f"An unexpected error occured: {e}")
+
+
+#Option 7: min and max sales price by ccatagory
+def Min_Max_Sales_price_by_catagory(data):
+    try:
+        pivot_table = pd.pivot_table(data,
+        index = 'product_category', 
+        values = 'unit_price',
+        aggfunc= {'unit_price': ['max','min']},
+        fill_value = 0)
+        pivot_table.index.name = 'Product Category'
+        pivot_table.columns = ['Min Sales Price', 'Max Sales Price']
+        print(pivot_table)
+        pivot_table.to_csv('Option7.csv')
+        return pivot_table
+    except Exception as e:
+        print(f"An unexpected error occured: {e}")
+
+#option 8: Number of unique employees by region
+def Unique_employees_by_region(data):
+    try:
+        pivot_table = pd.pivot_table(data,
+        index = 'sales_region', 
+        values = 'employee_id',
+        aggfunc= {'employee_id': pd.Series.nunique},
+        fill_value = 0)
+        pivot_table = pivot_table.reset_index()
+        pivot_table.columns = ['Region    ', 'Number of Unique Employees']
+        print(pivot_table)
+        pivot_table.to_csv('Option8.csv')
+        return pivot_table
+    except Exception as e:
+        print(f"An unexpected error occured: {e}")
+
+
 
 
 # Call load_csv to load the file

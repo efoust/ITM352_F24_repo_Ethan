@@ -1,0 +1,115 @@
+Customer State,Customer Type,Order Type,Total Sales
+Alabama,Business,Retail,9
+Alabama,Business,Wholesale,77
+Alabama,Individual,Retail,273
+Alaska,Business,Retail,9
+Alaska,Business,Wholesale,17
+Alaska,Individual,Retail,69
+Arizona,Business,Retail,16
+Arizona,Business,Wholesale,116
+Arizona,Individual,Retail,263
+Arkansas,Business,Wholesale,33
+Arkansas,Individual,Retail,80
+California,Business,Retail,40
+California,Business,Wholesale,562
+California,Individual,Retail,1400
+Colorado,Business,Retail,26
+Colorado,Business,Wholesale,115
+Colorado,Individual,Retail,282
+Connecticut,Business,Wholesale,98
+Connecticut,Individual,Retail,122
+Delaware,Business,Retail,7
+Delaware,Business,Wholesale,14
+Delaware,Individual,Retail,58
+District of Columbia,Business,Retail,6
+District of Columbia,Business,Wholesale,76
+District of Columbia,Individual,Retail,289
+Florida,Business,Retail,31
+Florida,Business,Wholesale,497
+Florida,Individual,Retail,721
+Georgia,Business,Wholesale,160
+Georgia,Individual,Retail,364
+Hawaii,Individual,Retail,41
+Idaho,Individual,Retail,77
+Illinois,Business,Retail,10
+Illinois,Business,Wholesale,171
+Illinois,Individual,Retail,345
+Indiana,Business,Retail,5
+Indiana,Business,Wholesale,57
+Indiana,Individual,Retail,260
+Iowa,Business,Retail,10
+Iowa,Business,Wholesale,70
+Iowa,Individual,Retail,150
+Kansas,Business,Wholesale,92
+Kansas,Individual,Retail,141
+Kentucky,Business,Retail,11
+Kentucky,Business,Wholesale,105
+Kentucky,Individual,Retail,173
+Louisiana,Business,Retail,13
+Louisiana,Business,Wholesale,18
+Louisiana,Individual,Retail,242
+Maryland,Business,Wholesale,82
+Maryland,Individual,Retail,101
+Massachusetts,Business,Wholesale,56
+Massachusetts,Individual,Retail,139
+Michigan,Business,Retail,9
+Michigan,Business,Wholesale,80
+Michigan,Individual,Retail,195
+Minnesota,Business,Wholesale,167
+Minnesota,Individual,Retail,217
+Mississippi,Individual,Retail,53
+Missouri,Business,Retail,7
+Missouri,Business,Wholesale,129
+Missouri,Individual,Retail,200
+Montana,Business,Retail,4
+Montana,Individual,Retail,15
+Nebraska,Business,Wholesale,18
+Nebraska,Individual,Retail,70
+Nevada,Business,Retail,7
+Nevada,Business,Wholesale,127
+Nevada,Individual,Retail,118
+New Hampshire,Individual,Retail,35
+New Jersey,Business,Retail,5
+New Jersey,Business,Wholesale,35
+New Jersey,Individual,Retail,138
+New Mexico,Business,Wholesale,28
+New Mexico,Individual,Retail,66
+New York,Business,Retail,21
+New York,Business,Wholesale,311
+New York,Individual,Retail,533
+North Carolina,Business,Wholesale,78
+North Carolina,Individual,Retail,226
+North Dakota,Individual,Retail,22
+Ohio,Business,Retail,10
+Ohio,Business,Wholesale,170
+Ohio,Individual,Retail,347
+Oklahoma,Business,Retail,5
+Oklahoma,Business,Wholesale,113
+Oklahoma,Individual,Retail,180
+Oregon,Business,Wholesale,33
+Oregon,Individual,Retail,72
+Pennsylvania,Business,Wholesale,140
+Pennsylvania,Individual,Retail,277
+South Carolina,Business,Retail,10
+South Carolina,Individual,Retail,102
+South Dakota,Individual,Retail,41
+Tennessee,Business,Wholesale,102
+Tennessee,Individual,Retail,169
+Texas,Business,Retail,50
+Texas,Business,Wholesale,796
+Texas,Individual,Retail,1094
+Utah,Business,Wholesale,47
+Utah,Individual,Retail,114
+Vermont,Business,Wholesale,33
+Virginia,Business,Retail,25
+Virginia,Business,Wholesale,322
+Virginia,Individual,Retail,320
+Washington,Business,Retail,21
+Washington,Business,Wholesale,190
+Washington,Individual,Retail,253
+West Virginia,Business,Retail,8
+West Virginia,Business,Wholesale,53
+West Virginia,Individual,Retail,82
+Wisconsin,Business,Wholesale,119
+Wisconsin,Individual,Retail,106
+Wyoming,Individual,Retail,6
