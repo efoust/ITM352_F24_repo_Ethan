@@ -54,7 +54,7 @@ def load_csv(file_path):
     except Exception as e:
         print(f"An unexpected error has occurred: {e}")
 
-# Function to display a user-choosable number of rows
+#Option 1: Function to display a number of rows set by the user. 
 def display_rows(data):
     while True:
         numRows = len(data) - 1
@@ -85,9 +85,10 @@ def display_menu(data):
     menu_options = (
         ("Show the first n rows of data", display_rows),
         ("Show the total number of sales by region", total_sales_by_region),
-        #("Average Sales per region with average sales by state and sale type", ),
-        ("Exit the program", exit_program)
-        #("Sales by customer type and order type by state", )
+        ("Average Sales per region with average sales by state and sale type", Avg_Sales),
+        ("Sales by customer type and order type by state", Sales_by_customer_type),
+        ("Total Sales quantity and price by region and product",Total_Sales_quantity_and_Price_by_region_and_Product),
+        ("Exit the program", exit_program)    
     )
 
     print("\nPlease choose from among these options:")
@@ -104,14 +105,63 @@ def display_menu(data):
         print("Invalid input. Please re-enter.")
 
 
-# Print the number of unique employees per region
+#Option 2: prints the total number of sales by region and order type. 
 def total_sales_by_region(data):
-    pivot_table = pd.pivot_table(data, index="sales_region", columns= "order_type", values="quantity", aggfunc=pd.Series.nunique)
-    print("\n Total Sales by Region and Order Type")
-    pivot_table.columns = ['Total Sales by Region']  # Rename the column for readability
-    print(pivot_table)
-    return pivot_table
+    try:
+        pivot_table = pd.pivot_table(data, index="sales_region", columns= "order_type", values="quantity", aggfunc='sum', fill_value=0)
+        pivot_table.index.name = 'Sales Region'
+        pivot_table.columns = [f'{col}' for col in pivot_table.columns]
+        print("\n Total Sales by Region and Order Type")
+        print(pivot_table)
+        return pivot_table
+    except Exception as e:
+        print(f"An unexpected error occured: {e}")
     
+#Option 3: Average sales by region with average sales by state and order type
+def Avg_Sales(data):
+    try:
+        pivot_table = pd.pivot_table(data, index = ['sales_region', 'customer_state','order_type'], values= 'quantity', aggfunc='mean', fill_value=0 )
+        pivot_table.index.names = ['Sales Region', 'Customer State', 'Order Type']
+        pivot_table.columns = ['Average Sales']
+       
+        print(pivot_table)
+        return pivot_table
+    except Exception as e:
+        print(f"An unexpected error occured: {e}")
+
+#Option 4: sales by customer type and order type by state. 
+def Sales_by_customer_type(data):
+    try:
+        #creates pivot table and organizes columns using index, calculates mean of the value(quantity)
+        pivot_table = pd.pivot_table(data, index = ['customer_state', 'customer_type', 'order_type'], values= 'quantity', aggfunc='sum', fill_value=0 )
+        #rename the column headers(indexes)
+        pivot_table.index.names = ['Customer State', 'Customer Type', 'Order Type']
+        #rename the column header(value)
+        pivot_table.columns = ['Total Sales']
+       
+        print(pivot_table)
+        pivot_table.to_csv('Sales_by_customer_type.csv')
+        return pivot_table
+    except Exception as e:
+        print(f"An unexpected error occured: {e}")
+
+#Option 5: Total Sales quantity and price by region and product. 
+def Total_Sales_quantity_and_Price_by_region_and_Product(data):
+    try:
+        data['total_sales_price'] = data['quantity'] * data['unit_price']
+        pivot_table = pd.pivot_table(data,
+        index = ['sales_region', 'product_category'], 
+        values = ['quantity', 'total_sales_price'],
+        aggfunc= {'quantity': 'sum', 'total_sales_price': 'sum'},
+        fill_value = 0)
+        pivot_table.index = ['Sales Region', 'Product Type']
+        pivot_table.columns = ['Total Quantity', 'Total Sales Price']
+        print(pivot_table)
+        pivot_table.to_csv('Option5.csv')
+        return pivot_table
+    except Exception as e:
+        print(f"An unexpected error occured: {e}")
+
 
 # Call load_csv to load the file
 url = "https://drive.google.com/uc?export=download&id=1Fv_vhoN4sTrUaozFPfzr0NCyHJLIeXEA"
@@ -127,5 +177,3 @@ def main():
 # If this is the main program, call main()
 if __name__ == "__main__":
     main()
-
-
