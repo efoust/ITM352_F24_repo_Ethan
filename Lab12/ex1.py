@@ -12,8 +12,8 @@ webpage = urllib.request.urlopen(url)
 
 #itterate through each line in the webpage and search for <title> tag
 for line in webpage:
-    line = line.decode(encoding)
-    if '<label>' in line:
+    line = line.decode('utf-8')
+    if '<title>' in line:
         print(line)
 
 

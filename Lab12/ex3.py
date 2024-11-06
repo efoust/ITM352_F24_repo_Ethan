@@ -16,6 +16,10 @@ html_to_parse = BeautifulSoup(itm_html, "html.parser")
 #find just the people in the itm page.  create a list
 list_of_people = html_to_parse.find_all('h2', class_= 'title')
 itm_people = []
+count = 0
 for element in list_of_people:
     itm_people.append(element.text)
     print(element.text)
+    count = count +1
+    
+print(count)
