@@ -1,0 +1,12 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Quiz Result</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+</head>
+<body>
+    <h1>Your Quiz Result</h1>
+    <p>Your score: {{ score }} out of {{ question_num }}</p>
+    <a href="{{ url_for('home') }}"><button>Take Quiz Again</button></a>
+</body>
+</html>
