@@ -1,44 +1,60 @@
 {
     "questions":[
-     {
-    "question": "What is the airspeed of an unladen swallow in miles/hr?",
-    "options": ["12","11","8","14"],
-    "answer": "12"
-},
-{
-    "question": "What is the capital of Texas",
-        "options": ["Austin","San Antonio","Dallas","Houston"],
-        "answer": "Dallas"
-},
-{
-    "question": "The Last Supper was painted by which artist", 
-        "options": ["Da Vinci","Rembrandt","Picasso","Michelangelo"],
-        "answer": "Da Vinci"
-},
-{
-    "question": "What is the capital of Texas",
-        "options": ["Austin","San Antonio","Dallas","Houston"],
-        "answer": "Dallas"
-},
-{
-    "question": "What is the capital of Texas",
-        "options": ["Austin","San Antonio","Dallas","Houston"],
-        "answer": "Dallas"
-},
-{
-    "question": "What is the capital of Texas",
-        "options": ["Austin","San Antonio","Dallas","Houston"],
-        "answer": "Dallas"
-},
-{
-    "question": "What is the capital of Texas",
-        "options": ["Austin","San Antonio","Dallas","Houston"],
-        "answer": "Dallas"
-},
-{
-    "question": "What is the capital of Texas",
-        "options": ["Austin","San Antonio","Dallas","Houston"],
-        "answer": "Dallas"
-}
+        {
+            "question": "Which country won the FIFA World Cup in 2018?",
+            "options": ["Germany", "Brazil", "France", "Argentina"],
+            "answer": "France",
+            "hint":"somethin"
+        },
+        {
+            "question": "Who is known as 'The King of Football'?",
+            "options": ["Lionel Messi", "Diego Maradona", "Pelé", "Cristiano Ronaldo"],
+            "answer": "Pelé",
+            "hint":"somethin"
+        },
+        {
+            "question": "How many players are on the field for one team during a soccer match?",
+            "options": ["9", "10", "11", "12"],
+            "answer": "11",
+            "hint":"somethin"
+        },
+        {
+            "question": "Which club has won the most UEFA Champions League titles?",
+            "options": ["Manchester United", "Real Madrid", "Bayern Munich", "AC Milan"],
+            "answer": "Real Madrid",
+            "hint":"somethin"
+        },
+        {
+            "question": "What is the standard duration of a professional soccer match?",
+            "options": ["60 minutes", "90 minutes", "80 minutes", "100 minutes"],
+            "answer": "90 minutes",
+            "hint":"somethin"
+        },
+        {
+            "question": "Who holds the record for the most goals scored in a single World Cup tournament?",
+            "options": ["Miroslav Klose", "Ronaldo", "Just Fontaine", "Gerd Müller"],
+            "answer": "Just Fontaine",
+            "hint":"somethin"
+        },
+        {
+            "question": "What year was the first FIFA World Cup held?",
+            "options": ["1928", "1930", "1934", "1940"],
+            "answer": "1930"
+        },
+        {
+            "question": "Which country has won the most FIFA World Cup titles?",
+            "options": ["Germany", "USA", "Brazil", "Norway"],
+            "answer": "Brazil"
+        },
+        {
+            "question": "What is the name of the annual award given to the best male football player in the world?",
+            "options": ["Golden Boot", "Ballon d'Or", "FIFA Best Player", "Puskás Award"],
+            "answer": "Ballon d'Or"
+        },
+        {
+            "question": "In soccer, what is the term used when a player scores three goals in one match?",
+            "options": ["Brace", "Hattrick", "Quadruple", "Triple Play"],
+            "answer": "Hattrick"
+        }
     ]
 }

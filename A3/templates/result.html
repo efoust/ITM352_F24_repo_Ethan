@@ -7,6 +7,11 @@
 <body>
     <h1>Your Quiz Result</h1>
     <p>Your score: {{ score }} out of {{ question_num }}</p>
+    <p>You scored a {{ score_percentage }}%</p>
+    <p>{{ displayed_time }}</p>
+    <br>
+    <br>
     <a href="{{ url_for('home') }}"><button>Take Quiz Again</button></a>
+    <a href="{{ url_for('logout') }}"><button>Logout</button></a>
 </body>
 </html>

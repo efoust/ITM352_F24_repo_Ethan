@@ -5,13 +5,24 @@
     <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
 </head>
 <body>
+    <h1> Question {{ num }}</h1>
     <h2>{{ question }}</h2>
     <form method="POST">
         {% for option in options %}
         <input type="radio" name="answer" value="{{ option }}">{{ option }}<br>
         {% endfor %}
         <br>
+        
         <button type="submit">Submit Answer</button>
+        <button type="submit" name="hint" value="hint">Want a hint?</button> <!-- button for hints-->
+        
     </form>
+<!--Determines which result message to display after answering the question-->
+    {% if result %}
+        <p class = "{{ 'correct_message' 
+            if result == 'Nice! Your answer was Correct!'
+            else 'incorrect_message' }}">{{ result }}</p>
+    {% endif %}
+
 </body>
 </html>

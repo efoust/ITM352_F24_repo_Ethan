@@ -3,10 +3,17 @@
 
 <head>
     <title>Welcome to the Quiz</title>
+    
     <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
 </head>
 <body>
+    <div class = 'loginNout'>
+        <a href="{{ url_for('login') }}"><button>Login</button></a>
+        <a href="{{ url_for('logout') }}"><button>Logout</button></a>
+    </div>
     <h1>Welcome to the Quiz!</h1>
-    <a href="{{ url_for('quiz') }}"><button>Start Quiz</button>
+    <h3>Please login before you begin</h3>
+    <a href="{{ url_for('quiz') }}"><button>Start Quiz</button></a>
+    
 </body>
 </html>
