@@ -23,14 +23,14 @@ def home():
 
 @app.route('/login', methods = ['GET','POST'])
 def login():
-    
+    global username, password
     if request.method == 'POST':
         username = request.form['username']
         password = request.form['password']
         users = load_users()
-
+        print(username,password)
         for user in users:
-            if user['username'] == username and user['password'] == password:
+            if user['username'] ==  username and user['password'] == password:
                 session['username'] = username
                 return redirect(url_for('home'))
         #flash('Invalid credentials, please try again')
@@ -39,54 +39,55 @@ def login():
 @app.route('/logout')
 def logout():
     session.pop('username', None)
-    return redirect(url_for('login'))
+    return redirect(url_for('home'))
 
 @app.route('/quiz', methods=['GET', 'POST'])
 def quiz():
     if 'username' not in session:
         return redirect(url_for('login'))
+    else:
+       
+        global question_num, score, hint
+        result = None
+        hint = None
+        correct_message = 'Nice! Your answer was Correct!'
+        incorrect_message = 'Sorry! Your answer was Incorrect!'
 
-    global question_num, score, hint
-    result = None
-    hint = None
-
-    correct_message = 'Nice! Your answer was Correct!'
-    incorrect_message = 'Sorry! Your answer was Incorrect!'
-
-    if request.method == 'POST':
-        if request.form.get("action") == 'hint':
-            hint= question_list[question_num].get("hint","No hint available")
-        else:
-            # Logic to capture the user’s answers and redirect to the result page
-            user_answer = request.form.get("answer")
-            correct_answer = question_list[question_num]["answer"]
-            if user_answer == correct_answer:
-                score += 1
-                result = correct_message
-            else: 
-                result = incorrect_message
-            
-            question_num += 1
-            if question_num >= len(question_list):
-                #save_score(session['username'], score, len(question_list))
-                return redirect(url_for('result',score=score))
-            
-    
+        if request.method == 'POST':
+            if request.form.get("action") == 'hint':
+                hint= question_list[question_num].get("hint","No hint available")
+            elif request.form.get('next'):
+                question_num += 1
+                if question_num >= len(question_list):
+                    return redirect(url_for('result',score=score))
+            else:
+                # Logic to capture the user’s answers and redirect to the result page
+                user_answer = request.form.get("answer")
+                correct_answer = question_list[question_num]["answer"]
+                if user_answer == correct_answer:
+                    score += 1
+                    result = correct_message
+                else: 
+                    result = incorrect_message            
+        progress = (question_num + 1) / len(question_list) * 100    
     #Load the question and options to display
     return render_template('quiz.html', num=question_num + 1,
                            question=question_list[question_num]["question"], 
                             options=question_list[question_num]["options"],
-                             result = result, hint = hint)  # Displays the question and options
+                             result = result, hint = hint, progress = progress)  # Displays the question and options
 
 
 
 @app.route('/result')
 def result():
-    global score_percentage, time_taken, displayed_time
+    global score_percentage, time_taken, displayed_time, scores_data
 
     if 'username' not in session:
         return redirect(url_for('login'))
     
+   
+
+
     end_time = datetime.now() 
     time_taken = end_time - start_time
 
@@ -98,6 +99,10 @@ def result():
     formatted_seconds = int(get_seconds)
     formatted_hours = int(get_hours)
 
+    score_percentage = score/question_num * 100
+    score_percentage = int(score_percentage)
+
+
     if(formatted_hours >= 1):
         displayed_time = f"You took {formatted_hours} hours and {formatted_minutes} minutes and {formatted_seconds} seconds to complete this quiz."
     elif(formatted_minutes >= 1):
@@ -105,10 +110,27 @@ def result():
     else:
         displayed_time = f"You took {formatted_seconds} seconds to complete this quiz."
 
-    
+    scores_data = {
+                        "username": session['username'],
+                        "score": score,
+                        "score percentage": score_percentage,
+                        "time_taken": [formatted_hours, formatted_minutes, formatted_seconds],
+                        "total_questions": len(question_list)
+                        
+    }
 
-    score_percentage = score/question_num * 100
-    score_percentage = int(score_percentage)
+    try:
+        with open('scores.json', 'r+') as scores_file:
+            try:
+                data = json.load(scores_file)
+            except json.JSONDecodeError:
+                data = {"scores": []}
+            data["scores"].append(scores_data)
+            scores_file.seek(0) 
+            json.dump(data, scores_file, indent=4)
+    except FileNotFoundError : 
+        with open('scores.json', 'w') as scores_file:
+            json.dump({"scores": [scores_data]}, scores_file, indent=4)
 
     return render_template('result.html', score=score, question_num = question_num, score_percentage = score_percentage, displayed_time = displayed_time, time_taken = time_taken)
 

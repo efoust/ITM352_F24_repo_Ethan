@@ -1,0 +1,103 @@
+{
+    "scores": [
+        {
+            "username": "testuser",
+            "score": 9,
+            "time_taken": [
+                0,
+                0,
+                31
+            ],
+            "total_questions": 10,
+            "score percentage": 90
+        },
+        {
+            "username": "testuser",
+            "score": 10,
+            "score percentage": 100,
+            "time_taken": [
+                0,
+                0,
+                28
+            ],
+            "total_questions": 10
+        },
+        {
+            "username": "testuser",
+            "score": 3,
+            "score percentage": 30,
+            "time_taken": [
+                0,
+                3,
+                195
+            ],
+            "total_questions": 10
+        },
+        {
+            "username": "testuser",
+            "score": 5,
+            "score percentage": 50,
+            "time_taken": [
+                0,
+                0,
+                26
+            ],
+            "total_questions": 10
+        },
+        {
+            "username": "testuser",
+            "score": 2,
+            "score percentage": 20,
+            "time_taken": [
+                0,
+                2,
+                132
+            ],
+            "total_questions": 10
+        },
+        {
+            "username": "testuser",
+            "score": 6,
+            "score percentage": 60,
+            "time_taken": [
+                0,
+                0,
+                29
+            ],
+            "total_questions": 10
+        },
+        {
+            "username": "testuser",
+            "score": 7,
+            "score percentage": 70,
+            "time_taken": [
+                0,
+                0,
+                26
+            ],
+            "total_questions": 10
+        },
+        {
+            "username": "testuser",
+            "score": 0,
+            "score percentage": 0,
+            "time_taken": [
+                0,
+                0,
+                59
+            ],
+            "total_questions": 10
+        },
+        {
+            "username": "testuser",
+            "score": 8,
+            "score percentage": 80,
+            "time_taken": [
+                0,
+                1,
+                90
+            ],
+            "total_questions": 10
+        }
+    ]
+}
