@@ -39,22 +39,26 @@
         {
             "question": "What year was the first FIFA World Cup held?",
             "options": ["1928", "1930", "1934", "1940"],
-            "answer": "1930"
+            "answer": "1930",
+            "hint":"somethin"
         },
         {
             "question": "Which country has won the most FIFA World Cup titles?",
             "options": ["Germany", "USA", "Brazil", "Norway"],
-            "answer": "Brazil"
+            "answer": "Brazil",
+            "hint":"somethin"
         },
         {
             "question": "What is the name of the annual award given to the best male football player in the world?",
             "options": ["Golden Boot", "Ballon d'Or", "FIFA Best Player", "Puskás Award"],
-            "answer": "Ballon d'Or"
+            "answer": "Ballon d'Or",
+            "hint":"somethin"
         },
         {
             "question": "In soccer, what is the term used when a player scores three goals in one match?",
             "options": ["Brace", "Hattrick", "Quadruple", "Triple Play"],
-            "answer": "Hattrick"
+            "answer": "Hattrick",
+            "hint":"somethin"
         }
     ]
 }

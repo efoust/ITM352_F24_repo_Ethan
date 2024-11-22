@@ -21,7 +21,6 @@ def home():
     return render_template('home.html')
 
 
-
 @app.route('/login', methods = ['GET','POST'])
 def login():
     
@@ -47,14 +46,16 @@ def quiz():
     if 'username' not in session:
         return redirect(url_for('login'))
 
-    global question_num, score
+    global question_num, score, hint
     result = None
+    hint = None
 
     correct_message = 'Nice! Your answer was Correct!'
     incorrect_message = 'Sorry! Your answer was Incorrect!'
+
     if request.method == 'POST':
-        if request.form.get("hint") == 'hint':
-            display_hint= question_list[question_num].get("hint","No hint available")
+        if request.form.get("action") == 'hint':
+            hint= question_list[question_num].get("hint","No hint available")
         else:
             # Logic to capture the user’s answers and redirect to the result page
             user_answer = request.form.get("answer")
@@ -62,21 +63,20 @@ def quiz():
             if user_answer == correct_answer:
                 score += 1
                 result = correct_message
-            
             else: 
                 result = incorrect_message
             
-                question_num += 1
-                if question_num >= len(question_list):
-                    return redirect(url_for('result',score=score))
-                else:
-                    result = ''
+            question_num += 1
+            if question_num >= len(question_list):
+                #save_score(session['username'], score, len(question_list))
+                return redirect(url_for('result',score=score))
+            
     
     #Load the question and options to display
     return render_template('quiz.html', num=question_num + 1,
                            question=question_list[question_num]["question"], 
                             options=question_list[question_num]["options"],
-                             result = result)  # Displays the question and options
+                             result = result, hint = hint)  # Displays the question and options
 
 
 
@@ -126,3 +126,4 @@ question_num = 0
 # Run the application
 if __name__ == "__main__":
     app.run(debug=True)
+
