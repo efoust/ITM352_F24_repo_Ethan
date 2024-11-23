@@ -9,15 +9,15 @@
         <h1> Question {{ num }}</h1>
         <p>{{ question }}</p>
 
-
+            <!--create progress bar, divs required to format it in style.css-->
         <div class="progress-box"> 
             <div class="progress-fill" id="progress-fill">{{ progress }}%</div> 
         </div>
-    
+        <!--display hint when it is called-->
         {% if hint %} 
             <p class="hint">{{ hint }}</p> 
         {% endif %}
-
+        <!--form handles displaying answer option, result message, and hints-->
         <form method="POST">
             {% for option in options %}
                 <input type="radio" name="answer" value="{{ option }}">{{ option }}<br>
@@ -33,6 +33,7 @@
             {% endif %}
         </form>
     </div>
+    <!--script gets progress variable from home.py and changes the css value to update the progress bar. -->
     <script>
         document.getElementById('progress-fill').style.width = '{{ progress }}%'; 
     </script>

@@ -1,11 +1,12 @@
 <!DOCTYPE html>
 <html lang="en">
-
+<!--login page handles getting login data and submitting it, if login matches user.json user will be redirected back to the home page-->
 <head>
     <title>Login</title>
     <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
 </head>
 <body>
+    <!-- display login information-->
     <h1>Please login before you continue. </h1>
     <form method ="POST">
         <label for = "username">Username:</label>
