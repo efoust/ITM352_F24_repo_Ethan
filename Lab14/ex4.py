@@ -14,7 +14,7 @@ plt.plot(fares_series,trip_miles, marker = "v",linestyle = "none", color = "c", 
 plt.title("Tips by Fare")
 plt.xlabel("Fare in $")
 plt.ylabel("Tips in $")
-fig = plt.figure()
+
 
 plt.savefig("FaresXMiles.png", dpi=300)
 plt.show()
