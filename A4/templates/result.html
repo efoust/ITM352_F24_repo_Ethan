@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Quiz Result</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+</head>
+<body>
+    <h1>Quiz Results</h1>
+    <h2>Recommended Movies</h2> 
+    <ul> 
+        {% if recommendations %}
+            {% for movie in recommendations %}
+                <li>{{ recommendations }} </li> 
+            {% endfor %} 
+        {% else %}
+            <li>No movies match your preferences.</li>
+        {% endif %}
+    </ul> 
+    <a href="{{ url_for('home') }}">Back to Home</a>
+</body>
+</html>

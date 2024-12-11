@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Quiz</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+</head>
+<body>
+    <div class = "quiz_questions">
+        <h1> Question {{ num }}</h1>
+        <p>{{ question }}</p>
+
+            <!--create progress bar, divs required to format it in style.css-->
+        <!-- <div class="progress-box"> 
+            <div class="progress-fill" id="progress-fill">{{ progress }}%</div> 
+        </div>
+      -->
+        <!--form handles displaying answer option, result message, and hints-->
+        <form method="POST">
+            {% for option in options %}
+                <input type="radio" name="answer" value="{{ option }}">{{ option }}<br>
+            {% endfor %}
+        
+            {% if result %}
+                <p class = "{{ 'correct_message' if result == 'Nice! Your answer was Correct!' else 'incorrect_message' }}">{{ result }}</p>
+                <input type="hidden" name="next" value="true">
+                <input type="submit" value ="Next Question">
+            {% else %}
+                <input type = "submit" value = "Submit">
+            {% endif %}
+        </form>
+    </div>
+    <!--script gets progress variable from home.py and changes the css value to update the progress bar. -->
+    <script>
+        document.getElementById('progress-fill').style.width = '{{ progress }}%'; 
+    </script>
+</body>
+</html>

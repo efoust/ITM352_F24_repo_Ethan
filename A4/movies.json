@@ -1,0 +1,138 @@
+{
+    "movies": {
+      "genres": {
+        "Action": [
+          {
+            "title": "The Dark Knight",
+            "year": 2008,
+            "subgenres": ["Superhero", "Crime"],
+            "director": "Christopher Nolan",
+            "rating": "PG-13",
+            "actors": ["Christian Bale", "Heath Ledger"],
+            "platform": ["Theatrical", "Streaming"],
+            "country": "USA"
+          },
+          {
+            "title": "Mad Max: Fury Road",
+            "year": 2015,
+            "subgenres": ["Post-apocalyptic"],
+            "director": "George Miller",
+            "rating": "R",
+            "actors": ["Tom Hardy", "Charlize Theron"],
+            "platform": ["Theatrical", "Streaming"],
+            "country": "Australia"
+          }
+        ],
+        "Comedy": [
+          {
+            "title": "Superbad",
+            "year": 2007,
+            "subgenres": ["Teen Comedy"],
+            "director": "Greg Mottola",
+            "rating": "R",
+            "actors": ["Jonah Hill", "Michael Cera"],
+            "platform": ["Theatrical", "Streaming"],
+            "country": "USA"
+          },
+          {
+            "title": "The Hangover",
+            "year": 2009,
+            "subgenres": ["Buddy Comedy"],
+            "director": "Todd Phillips",
+            "rating": "R",
+            "actors": ["Bradley Cooper", "Zach Galifianakis"],
+            "platform": ["Theatrical", "Streaming"],
+            "country": "USA"
+          }
+        ],
+        "Drama": [
+          {
+            "title": "The Shawshank Redemption",
+            "year": 1994,
+            "subgenres": ["Prison Drama"],
+            "director": "Frank Darabont",
+            "rating": "R",
+            "actors": ["Tim Robbins", "Morgan Freeman"],
+            "platform": ["Theatrical", "DVD", "Streaming"],
+            "country": "USA"
+          },
+          {
+            "title": "A Beautiful Mind",
+            "year": 2001,
+            "subgenres": ["Biographical Drama"],
+            "director": "Ron Howard",
+            "rating": "PG-13",
+            "actors": ["Russell Crowe", "Jennifer Connelly"],
+            "platform": ["Theatrical", "Streaming"],
+            "country": "USA"
+          }
+        ],
+        "Horror": [
+          {
+            "title": "Get Out",
+            "year": 2017,
+            "subgenres": ["Psychological Horror"],
+            "director": "Jordan Peele",
+            "rating": "R",
+            "actors": ["Daniel Kaluuya", "Allison Williams"],
+            "platform": ["Theatrical", "Streaming"],
+            "country": "USA"
+          },
+          {
+            "title": "The Conjuring",
+            "year": 2013,
+            "subgenres": ["Supernatural Horror"],
+            "director": "James Wan",
+            "rating": "R",
+            "actors": ["Patrick Wilson", "Vera Farmiga"],
+            "platform": ["Theatrical", "Streaming"],
+            "country": "USA"
+          }
+        ],
+        "Romance": [
+          {
+            "title": "La La Land",
+            "year": 2016,
+            "subgenres": ["Musical Romance"],
+            "director": "Damien Chazelle",
+            "rating": "PG-13",
+            "actors": ["Ryan Gosling", "Emma Stone"],
+            "platform": ["Theatrical", "Streaming"],
+            "country": "USA"
+          },
+          {
+            "title": "Pride and Prejudice",
+            "year": 2005,
+            "subgenres": ["Period Drama"],
+            "director": "Joe Wright",
+            "rating": "PG",
+            "actors": ["Keira Knightley", "Matthew Macfadyen"],
+            "platform": ["Theatrical", "Streaming"],
+            "country": "USA"
+          }
+        ],
+        "Science Fiction": [
+          {
+            "title": "Inception",
+            "year": 2010,
+            "subgenres": ["Mind-bending Sci-Fi"],
+            "director": "Christopher Nolan",
+            "rating": "PG-13",
+            "actors": ["Leonardo DiCaprio", "Joseph Gordon-Levitt"],
+            "platform": ["Theatrical", "Streaming"],
+            "country": "USA"
+          },
+          {
+            "title": "Blade Runner 2049",
+            "year": 2017,
+            "subgenres": ["Cyberpunk"],
+            "director": "Denis Villeneuve",
+            "rating": "R",
+            "actors": ["Ryan Gosling", "Harrison Ford"],
+            "platform": ["Theatrical", "Streaming"],
+            "country": "USA"
+          }
+        ]
+      }
+    }
+  }

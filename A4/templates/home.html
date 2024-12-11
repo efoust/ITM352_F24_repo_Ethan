@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+<!-- home page for quiz, displays the start button, welcome message, login and logout buttons-->
+<head>
+    <!--create title to display on the tab-->
+    <title>Welcome to the Movie Generator</title>
+    <!--link css file to this page-->
+    <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+</head>
+<body>
+    <!--div divides the login and logout buttonn from the rest of the contents to display them differently-->
+    <div class = 'loginNout'>
+        <a href="{{ url_for('login') }}"><button>Login</button></a>
+        <a href="{{ url_for('logout') }}"><button>Logout</button></a>
+    </div>
+    <h1>Welcome to the Movie Generator!</h1>
+    <h3>Please login before you begin.</h3>
+    <a href="{{ url_for('quiz') }}"><button>Begin</button></a>
+    
+</body>
+</html>

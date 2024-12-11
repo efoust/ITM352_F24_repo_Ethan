@@ -1,0 +1,19 @@
+{
+    "questions": [
+        {
+            "question": "What genre of movie do you like?",
+            "options": ["Action", "Comedy", "Drama", "Horror", "Romance", "Science Fiction"],
+            "answer": ""
+        },
+        {
+            "question": "Which platform do you prefer to watch movies on?",
+            "options": ["Theatrical", "Streaming", "DVD"],
+            "answer": ""
+        },
+        {
+            "question": "Do you have a preferred movie rating?",
+            "options": ["G", "PG", "PG-13", "R"],
+            "answer": ""
+        }
+    ]
+}
