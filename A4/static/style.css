@@ -1,37 +1,27 @@
+nav ul{
+list-style-type: none;
+position:absolute;
+top:10px;
+right:10px;
+}
+
+
 /*Css to format all pages into a column in the middle of the page and change background color to match the soccer theme*/
 body {
     display: flex;
     flex-direction: column;
     align-items: center;
     background-color: rgb(186, 125, 44);
+    list-style-type:none;
 }
 
 /* makes the headings larger than the options and other text. */ 
 h1 {
     text-align: center;
     font-size: 25px;
+    list-style-type:none;
 }
 
-/*.progress-box {
-    width: 100%;
-    background-color: #505250; 
-    border: 1px solid #ccc; 
-    height: 30px; 
-    border-radius: 5px; 
-    margin-bottom: 20px; 
-} 
-
-.progress-fill { 
-    height: 100%; 
-    width: 0;
-    background-color: #116a14; 
-    text-align: center; 
-    line-height: 30px; 
-    color: rgb(255, 255, 255); 
-    border-radius: 5px; 
-    transition: width 0.4s ease;
-}
-*/
 /* changes the color of the result messages */
 .correct_message {
     color: rgb(5, 230, 5);
@@ -41,10 +31,4 @@ h1 {
 .incorrect_message {
     color: rgb(199, 29, 29);
     font-weight: bold;
-}
-
-.loginNout {
-position:absolute;
-top:10px;
-right:10px;
 }

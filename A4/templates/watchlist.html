@@ -1,0 +1,36 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Your Watchlist</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+</head>
+<body>
+    <h1>Your Watchlist</h1>
+    
+    {% with messages = get_flashed_messages() %}
+      {% if messages %}
+        <ul class="flashes">
+          {% for message in messages %}
+            <li>{{ message }}</li>
+          {% endfor %}
+        </ul>
+      {% endif %}
+    {% endwith %}
+
+    <ul>
+        {% for movie in watchlist %}
+            <li>
+                {{ movie }}
+                <form action="{{ url_for('remove_from_watchlist') }}" method="POST" style="display:inline;">
+                    <input type="hidden" name="movie_title" value="{{ movie }}">
+                    <button type="submit">Remove</button>
+                </form>
+            </li>
+        {% endfor %}
+    </ul>
+    <a href="{{ url_for('home') }}"><button>Back to Home</button></a>
+    <a href="{{ url_for('logout') }}"><button>Logout</button></a>
+</body>
+</html>

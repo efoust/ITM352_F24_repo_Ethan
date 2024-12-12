@@ -1,21 +1,23 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
 <head>
-    <title>Quiz Result</title>
-    <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Movie Recommendations</title>
 </head>
 <body>
-    <h1>Quiz Results</h1>
-    <h2>Recommended Movies</h2> 
-    <ul> 
-        {% if recommendations %}
-            {% for movie in recommendations %}
-                <li>{{ recommendations }} </li> 
-            {% endfor %} 
-        {% else %}
-            <li>No movies match your preferences.</li>
-        {% endif %}
-    </ul> 
-    <a href="{{ url_for('home') }}">Back to Home</a>
+    <h1>Movie Recommendations</h1>
+    <ul>
+        {% for movie in recommendations %}
+            <li>
+                {{ movie }}
+                <form action="{{ url_for('add_to_watchlist') }}" method="POST" style="display:inline;">
+                    <input type="hidden" name="movie_title" value="{{ movie }}">
+                    <button type="submit">Add to Watchlist</button>
+                </form>
+            </li>
+        {% endfor %}
+    </ul>
+    <a href="{{ url_for('watchlist') }}">View Watchlist</a>
 </body>
 </html>

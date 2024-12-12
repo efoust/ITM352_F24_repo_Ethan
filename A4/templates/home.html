@@ -8,14 +8,20 @@
     <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
 </head>
 <body>
-    <!--div divides the login and logout buttonn from the rest of the contents to display them differently-->
-    <div class = 'loginNout'>
-        <a href="{{ url_for('login') }}"><button>Login</button></a>
-        <a href="{{ url_for('logout') }}"><button>Logout</button></a>
-    </div>
+    <nav>
+        <ul>
+
+            <li><a href="{{ url_for('login') }}"><button>Login</button></a></li>
+            <li><a href="{{ url_for('register') }}"><button>Register</button></a></li>
+            <li><a href="{{ url_for('logout') }}"><button>Logout</button></a></li>
+            <!-- Add more links as needed -->
+        </ul>
+    </nav>
+    
     <h1>Welcome to the Movie Generator!</h1>
-    <h3>Please login before you begin.</h3>
+
     <a href="{{ url_for('quiz') }}"><button>Begin</button></a>
+    <a href="{{ url_for('watchlist') }}"><button>Watchlist</button></a>
     
 </body>
 </html>

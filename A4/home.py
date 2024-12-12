@@ -6,9 +6,13 @@ app.secret_key = 'ethan'
 
 # Load user file to validate the login page
 def load_users():
-    with open('user.json') as user_file:
-        users = json.load(user_file)
-    return users["users"]
+    try:
+        with open('user.json') as user_file:
+            users = json.load(user_file)
+        return users["users"]
+    except FileNotFoundError:
+        return []
+
 
 # Home page
 @app.route("/")
@@ -16,6 +20,29 @@ def home():
     session['question_num'] = 0
     session['user_responses'] = {}
     return render_template('home.html')
+
+@app.route('/register', methods=['GET', 'POST'])
+def register():
+    if request.method == 'POST':
+        username = request.form['username']
+        password = request.form['password']
+        
+        users = load_users()
+        for user in users:
+            if user['username'] == username:
+                flash("Username already exists. Please choose another one.")
+                return redirect(url_for('register'))
+        
+        new_user = {'username': username, 'password': password}
+        users.append(new_user)
+        
+        with open('user.json', 'w') as user_file:
+            json.dump({'users': users}, user_file, indent=4)
+        
+        flash("Registration successful! Please log in.")
+        return redirect(url_for('login'))
+    
+    return render_template('register.html')
 
 # Login route
 @app.route('/login', methods=['GET', 'POST'])
@@ -96,6 +123,60 @@ def recommend_movies(user_responses, movies):
 
     print("Recommended Movies:", recommended_movies)  # Debugging
     return recommended_movies
+
+
+@app.route('/watchlist') 
+def watchlist(): 
+    if 'username' not in session: 
+        return redirect(url_for('login')) 
+    
+    username = session['username'] 
+    with open('watchlist.json') as file: 
+        watchlist_data = json.load(file) 
+        
+        user_watchlist = watchlist_data['watchlists'].get(username, []) 
+        return render_template('watchlist.html', watchlist=user_watchlist)
+
+@app.route('/add_to_watchlist', methods=['POST'])
+def add_to_watchlist():
+    if 'username' not in session:
+        return redirect(url_for('login'))
+
+    username = session['username']
+    movie_title = request.form.get('movie_title')
+    
+    with open('watchlist.json', 'r+') as file:
+        watchlist_data = json.load(file)
+        if username not in watchlist_data['watchlists']:
+            watchlist_data['watchlists'][username] = []
+        if movie_title not in watchlist_data['watchlists'][username]:
+            watchlist_data['watchlists'][username].append(movie_title)
+            file.seek(0)
+            json.dump(watchlist_data, file, indent=4)
+            file.truncate()
+    
+    flash(f"{movie_title} has been added to your watchlist!")
+    return redirect(url_for('result'))
+
+@app.route('/remove_from_watchlist', methods=['POST'])
+def remove_from_watchlist():
+    if 'username' not in session:
+        return redirect(url_for('login'))
+
+    username = session['username']
+    movie_title = request.form.get('movie_title')
+    
+    with open('watchlist.json', 'r+') as file:
+        watchlist_data = json.load(file)
+        if 'watchlists' in watchlist_data and username in watchlist_data['watchlists']:
+            if movie_title in watchlist_data['watchlists'][username]:
+                watchlist_data['watchlists'][username].remove(movie_title)
+                file.seek(0)
+                json.dump(watchlist_data, file, indent=4)
+                file.truncate()
+    
+    flash(f"{movie_title} has been removed from your watchlist.")
+    return redirect(url_for('watchlist'))
 
 @app.route('/result')
 def result():

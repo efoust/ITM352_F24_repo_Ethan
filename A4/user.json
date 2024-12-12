@@ -2,13 +2,19 @@
     "users": [
         {
             "username": "ethan",
-            "password": "21" 
-        }, 
-        { "username": "anotheruser",
-         "password": "mypassword" 
-        } , 
-        { "username": "testuser",
-         "password": "password123" 
-        } 
+            "password": "21"
+        },
+        {
+            "username": "anotheruser",
+            "password": "mypassword"
+        },
+        {
+            "username": "testuser",
+            "password": "password123"
+        },
+        {
+            "username": "yo",
+            "password": "yo"
+        }
     ]
-} 
+}
