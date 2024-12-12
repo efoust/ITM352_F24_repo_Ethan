@@ -15,6 +15,18 @@
         {
             "username": "yo",
             "password": "yo"
+        },
+        {
+            "username": "newUser",
+            "password": "newPassword"
+        },
+        {
+            "username": "yoyo",
+            "password": "yooo"
+        },
+        {
+            "username": "myUser",
+            "password": "myPassword"
         }
     ]
 }

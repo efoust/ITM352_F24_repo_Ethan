@@ -4,7 +4,9 @@ position:absolute;
 top:10px;
 right:10px;
 }
-
+li{
+    list-style-type:none;
+}
 
 /*Css to format all pages into a column in the middle of the page and change background color to match the soccer theme*/
 body {
@@ -12,14 +14,14 @@ body {
     flex-direction: column;
     align-items: center;
     background-color: rgb(186, 125, 44);
-    list-style-type:none;
+
 }
 
 /* makes the headings larger than the options and other text. */ 
 h1 {
     text-align: center;
     font-size: 25px;
-    list-style-type:none;
+
 }
 
 /* changes the color of the result messages */

@@ -4,7 +4,7 @@ import json
 app = Flask(__name__)
 app.secret_key = 'ethan'
 
-# Load user file to validate the login page
+
 def load_users():
     try:
         with open('user.json') as user_file:

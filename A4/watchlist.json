@@ -1,9 +1,7 @@
 {
     "watchlists": {
         "ethan": [
-            "The Conjuring",
-            "Blade Runner 2049",
-            "Superbad"
+            "The Hangover"
         ],
         "anotheruser": [
             "The Hangover"
@@ -11,6 +9,13 @@
         "yo": [
             "A Beautiful Mind",
             "The Hangover"
+        ],
+        "newUser": [
+            "The Dark Knight"
+        ],
+        "yoyo": [],
+        "myUser": [
+            "Get Out"
         ]
     }
 }
