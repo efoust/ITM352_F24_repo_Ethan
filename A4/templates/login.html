@@ -1,12 +1,10 @@
 <!DOCTYPE html>
 <html lang="en">
-<!--login page handles getting login data and submitting it, if login matches user.json user will be redirected back to the home page-->
 <head>
     <title>Login</title>
     <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
 </head>
 <body>
-    <!-- display login information-->
     <h1>Please login before you continue. </h1>
     <form method ="POST">
         <label for = "username">Username:</label>
@@ -15,9 +13,12 @@
         <label for = "password">Password:</label>
         <input type = "password" id="password" name ="password" required>
         <br>
-        <input type = "submit" value = "Login">
-        <a href="{{ url_for('register') }}"><button>Register</button></a>
+        <input type = "submit" value = "Submit">
+        <br>
+        <h1>Don't have an account?</h1>
+        
     </form>
+    <a href="{{ url_for('register') }}"><button>Register</button></a>
 
     {% with messages = get_flashed_messages() %}
       {% if messages %}

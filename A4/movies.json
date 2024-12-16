@@ -9,9 +9,153 @@
             "director": "Christopher Nolan",
             "rating": "PG-13",
             "actors": ["Christian Bale", "Heath Ledger"],
-            "platform": ["Theatrical", "Streaming"],
-            "country": "USA"
+            "platform": ["Prime Video", "Max"],
+            "country": "USA",
+            "photo_url" :"static/images/The_Dark_Knight.jpg"
           },
+          {
+            "title": "PAW Patrol: The Movie",
+            "year": 2021,
+            "subgenres": ["Animation", "Adventure", "Comedy", "Family"],
+            "director": "Cal Brunker",
+            "rating": "G",
+            "actors": ["Iain Armitage", "Marsai Martin", "Ron Pardo", "Will Brisbin", "Keegan Hedley", "Lilly Bartlam", "Kingsley Marshall", "Shayle Simons"],
+            "platform": ["Prime Video", "Netflix", "Paramount+"],
+            "country": "Canada",
+            "photo_url": "static/images/paw_patrol_the_movie.jpg"
+          },          
+          {
+            "title": "Transformers: One",
+            "year": 2024,
+            "subgenres": ["Animation", "Action", "Adventure", "Sci-Fi"],
+            "director": "Josh Cooley",
+            "rating": "PG",
+            "actors": ["Chris Hemsworth", "Brian Tyree Henry", "Scarlett Johansson", "Keegan-Michael Key", "Jon Hamm", "Laurence Fishburne"],
+            "platform": ["Prime Video", "Paramount+"],
+            "country": "USA",
+            "photo_url": "static/images/transformers_one.jpg"
+          },          
+          {
+            "title": "The Lego Batman Movie",
+            "year": 2017,
+            "subgenres": ["Animation", "Action", "Comedy", "Family"],
+            "director": "Chris McKay",
+            "rating": "PG",
+            "actors": ["Will Arnett", "Michael Cera", "Rosario Dawson", "Ralph Fiennes"],
+            "platform": ["Hulu", "Max", "Disney+", "Prime Video"],
+            "country": "USA",
+            "photo_url": "static/images/lego_batman_movie.jpg"
+          },          
+          {
+            "title": "The Lost City",
+            "year": 2022,
+            "subgenres": ["Action", "Adventure", "Comedy", "Romance"],
+            "director": "Aaron Nee, Adam Nee",
+            "rating": "PG-13",
+            "actors": ["Sandra Bullock", "Channing Tatum", "Daniel Radcliffe", "Da'Vine Joy Randolph", "Brad Pitt"],
+            "platform": ["Paramount+","Netflix"],
+            "country": "USA",
+            "photo_url": "static/images/the_lost_city.jpg"
+          },     
+          {
+            "title": "Interstellar",
+            "year": 2014,
+            "subgenres": ["Space Exploration"],
+            "director": "Christopher Nolan",
+            "rating": "PG-13",
+            "actors": ["Matthew McConaughey", "Anne Hathaway"],
+            "platform": ["Paramount+", "Prime Video"], 
+            "country": "USA",
+            "photo_url" :"static/images/interstellar.jpg"
+          },
+          {
+            "title": "Gladiator",
+            "year": 2000,
+            "subgenres": ["Action", "Drama", "Adventure"],
+            "director": "Ridley Scott",
+            "rating": "R",
+            "actors": ["Russell Crowe", "Joaquin Phoenix", "Connie Nielsen"],
+            "platform": ["Hulu", "Paramount+"],
+            "country": "USA",
+            "photo_url": "static/images/gladiator.jpg"
+          },          
+          {
+            "title": "Kingdom of the Planet of the Apes",
+            "year": 2024,
+            "subgenres": ["Action", "Adventure", "Sci-Fi"],
+            "director": "Wes Ball",
+            "rating": "PG-13",
+            "actors": ["Owen Teague", "Freya Allan", "Kevin Durand", "Peter Macon", "William H. Macy"],
+            "platform": ["Hulu", "Disney+"],
+            "country": "USA",
+            "photo_url": "static/images/Kingdom_of_the_planet_of_the_apes.jpg"
+          },          
+          {
+            "title": "WarGames",
+            "year": 1983,
+            "subgenres": ["Action", "Drama", "Sci-Fi", "Thriller"],
+            "director": "John Badham",
+            "rating": "PG",
+            "actors": ["Matthew Broderick", "Dabney Coleman", "John Wood", "Ally Sheedy"],
+            "platform": ["Max", "Hulu"],
+            "country": "USA",
+            "photo_url": "static/images/warGames.jpg"
+          },          
+          {
+            "title": "Indiana Jones and the Temple of Doom",
+            "year": 1984,
+            "subgenres": ["Action", "Adventure", "Fantasy"],
+            "director": "Steven Spielberg",
+            "rating": "PG",
+            "actors": ["Harrison Ford", "Kate Capshaw", "Ke Huy Quan", "Amrish Puri", "Roshan Seth", "Philip Stone"],
+            "platform": ["Paramount+", "Prime Video"],
+            "country": "USA",
+            "photo_url": "static/images/indiana_jones_temple_of_doom.jpg"
+          },          
+          {
+            "title": "Indiana Jones: Dial of Destiny",
+            "year": 2023,
+            "subgenres": ["Adventure", "Action"],
+            "director": "James Mangold",
+            "rating": "PG-13",
+            "actors": ["Harrison Ford", "Phoebe Waller-Bridge"],
+            "platform": ["Disney+"],
+            "country": "USA",
+            "photo_url": "static/images/indiana_jones_dialofdestiny.jpg"
+          },
+          {
+            "title": "Deadpool",
+            "year": 2016,
+            "subgenres": ["Action", "Comedy", "Superhero"],
+            "director": "Tim Miller",
+            "rating": "R",
+            "actors": ["Ryan Reynolds", "Morena Baccarin"],
+            "platform": ["Disney+"],
+            "country": "USA",
+            "photo_url": "static/images/deadpool.jpg"
+          },          
+          {
+            "title": "The Dark Tower",
+            "year": 2017,
+            "subgenres": ["Action", "Adventure", "Fantasy", "Sci-Fi", "Western"],
+            "director": "Nikolaj Arcel",
+            "rating": "PG-13",
+            "actors": ["Idris Elba", "Matthew McConaughey", "Tom Taylor", "Claudia Kim", "Jackie Earle Haley", "Fran Kranz", "Abbey Lee"],
+            "platform": ["Netflix"],
+            "country": "USA",
+            "photo_url": "static/images/the_dark_tower.jpg"
+          },
+          {
+            "title": "Hit Man",
+            "year": 2023,
+            "subgenres": ["Comedy", "Crime", "Romance"],
+            "director": "Richard Linklater",
+            "rating": "R",
+            "actors": ["Glen Powell", "Adria Arjona", "Austin Amelio", "Retta", "Sanjay Rao"],
+            "platform": ["Netflix"],
+            "country": "USA",
+            "photo_url": "static/images/hit_man.jpg"
+          },                    
           {
             "title": "Mad Max: Fury Road",
             "year": 2015,
@@ -19,11 +163,211 @@
             "director": "George Miller",
             "rating": "R",
             "actors": ["Tom Hardy", "Charlize Theron"],
-            "platform": ["Theatrical", "Streaming"],
-            "country": "Australia"
+            "platform": ["Max", "Prime Video"],
+            "country": "Australia",
+            "photo_url" :"static/images/mad_Max_Fury_Road.jpg"
+          },
+          {
+            "title": "Here Comes the Boom",
+            "year": 2012,
+            "subgenres": ["Comedy", "Sports"],
+            "director": "Frank Coraci",
+            "rating": "PG",
+            "actors": ["Kevin James", "Salma Hayek", "Henry Winkler", "Greg Germann", "Joe Rogan", "Gary Valentine", "Bas Rutten"],
+            "platform": ["Netflix"],
+            "country": "USA",
+            "photo_url": "static/images/here_comes_the_boom.jpg"
+          },          
+          {
+            "title": "The Incredibles",
+            "year": 2004,
+            "subgenres": ["Superhero", "Family"],
+            "director": "Brad Bird",
+            "rating": "G",
+            "actors": ["Craig T. Nelson", "Holly Hunter"],
+            "platform": ["Disney+"],
+            "country": "USA",
+            "photo_url" :"static/images/the_incredibles.jpg"
+          },
+          {
+            "title": "Pirates of the Caribbean: The Curse of the Black Pearl",
+            "year": 2003,
+            "subgenres": ["Adventure"],
+            "director": "Gore Verbinski",
+            "rating": "PG",
+            "actors": ["Johnny Depp", "Orlando Bloom"],
+            "platform": ["Disney+"],
+            "country": "USA",
+            "photo_url" :"static/images/POTC_curse_of_the_Black_Pearl.jpg"
+          },
+          {
+            "title": "A.X.L.",
+            "year": 2018,
+            "subgenres": ["Action", "Adventure", "Sci-Fi"],
+            "director": "Oliver Daly",
+            "rating": "PG",
+            "actors": ["Alex Neustaedter", "Becky G", "Alex MacNicoll", "Dominic Rains", "Thomas Jane"],
+            "platform": ["Peacock"],
+            "country": "USA",
+            "photo_url": "static/images/axl.jpg"
+          },          
+          {
+            "title": "Twisters",
+            "year": 2024,
+            "subgenres": ["Action", "Adventure", "Disaster"],
+            "directors": ["Lee Isaac Chung"],
+            "rating": "PG-13",
+            "actors": ["Daisy Edgar-Jones", "Glen Powell", "Anthony Ramos", "Brandon Perea", "Maura Tierney", "Sasha Lane"],
+            "platform": ["Peacock"],
+            "country": "USA",
+            "photo_url": "static/images/twisters.jpg"
+          },          
+          {
+            "title": "The Northman",
+            "year": 2022,
+            "subgenres": ["Action", "Adventure", "Drama", "Fantasy", "History"],
+            "directors": ["Robert Eggers"],
+            "rating": "R",
+            "actors": ["Alexander Skarsgård", "Nicole Kidman", "Claes Bang", "Ethan Hawke", "Anya Taylor-Joy", "Willem Dafoe", "Björk"],
+            "platform": ["Peacock"],
+            "country": "USA",
+            "photo_url": "static/images/the-northman.jpg"
+          },          
+          {
+            "title": "Extraction",
+            "year": 2020,
+            "subgenres": ["Thriller"],
+            "director": "Sam Hargrave",
+            "rating": "R",
+            "actors": ["Chris Hemsworth", "Randeep Hooda"],
+            "platform": ["Netflix"],
+            "country": "USA",
+            "photo_url" :"static/images/Extraction.jpg"
+
           }
         ],
         "Comedy": [
+          {
+            "title": "Toy Story",
+            "year": 1995,
+            "subgenres": ["Animation", "Family"],
+            "director": "John Lasseter",
+            "rating": "G",
+            "actors": ["Tom Hanks", "Tim Allen"],
+            "platform": ["Disney+"],
+            "country": "USA",
+            "photo_url": "static/images/toy_story.jpg"
+          },
+          {
+            "title": "Chicken Run",
+            "year": 2000,
+            "subgenres": ["Animation", "Adventure", "Comedy", "Family"],
+            "directors": ["Peter Lord", "Nick Park"],
+            "rating": "G",
+            "actors": ["Mel Gibson", "Julia Sawalha", "Phil Daniels", "Lynn Ferguson", "Tony Haygarth", "Jane Horrocks"],
+            "platform": ["Netflix"],
+            "country": "UK",
+            "photo_url": "static/images/chicken-run.jpg"
+          },          
+          {
+            "title": "Family Switch",
+            "year": 2023,
+            "subgenres": ["Comedy", "Family"],
+            "director": "McG",
+            "rating": "PG",
+            "actors": ["Jennifer Garner", "Ed Helms", "Emma Myers", "Brady Noon", "Rita Moreno"],
+            "platform": ["Netflix"],
+            "country": "USA",
+            "photo_url": "static/images/family-switch.jpg"
+          },          
+          {
+            "title": "Curious George",
+            "year": 2006,
+            "subgenres": ["Animation", "Adventure", "Comedy", "Family"],
+            "directors": ["Matthew O'Callaghan"],
+            "rating": "G",
+            "actors": ["Will Ferrell", "Drew Barrymore", "Eugene Levy", "Frank Welker"],
+            "platform": ["Peacock"],
+            "country": "USA",
+            "photo_url": "static/images/curious-george.jpg"
+          },          
+          {
+            "title": "Little",
+            "year": 2019,
+            "subgenres": ["Comedy", "Fantasy", "Romance"],
+            "director": "Tina Gordon",
+            "rating": "PG-13",
+            "actors": ["Regina Hall", "Issa Rae", "Marsai Martin"],
+            "platform": ["Netflix"],
+            "country": "USA",
+            "photo_url": "static/images/little.jpg"
+          },          
+          {
+            "title": "Project X",
+            "year": 2012,
+            "subgenres": ["Comedy"],
+            "director": "Nima Nourizadeh",
+            "rating": "R",
+            "actors": ["Thomas Mann", "Oliver Cooper", "Jonathan Daniel Brown", "Dax Flame", "Kirby Bliss Blanton", "Alexis Knapp", "Miles Teller"],
+            "platform": ["Netflix"],
+            "country": "USA",
+            "photo_url": "static/images/project-x.jpg"
+          },          
+          {
+            "title": "Rio",
+            "year": 2011,
+            "subgenres": ["Animation", "Adventure", "Comedy", "Family", "Musical"],
+            "director": "Carlos Saldanha",
+            "rating": "PG",
+            "actors": ["Jesse Eisenberg", "Anne Hathaway", "George Lopez", "Jamie Foxx", "Will.i.am", "Leslie Mann"],
+            "platform": ["Max", "Hulu"],
+            "country": "USA",
+            "photo_url": "static/images/rio.jpg"
+          },          
+          {
+            "title": "Barbie",
+            "year": 2023,
+            "subgenres": ["Adventure", "Comedy", "Fantasy"],
+            "director": "Greta Gerwig",
+            "rating": "PG-13",
+            "actors": ["Margot Robbie", "Ryan Gosling", "Issa Rae", "Kate McKinnon", "Alexandra Shipp", "Emma Mackey", "Hari Nef", "Ana Cruz Kayne", "Dua Lipa", "Nicola Coughlan", "Ritu Arya", "John Cena"],
+            "platform": ["Max", "Hulu"],
+            "country": "USA",
+            "photo_url": "static/images/barbie.jpg"
+          },          
+          {
+            "title": "Elf",
+            "year": 2003,
+            "subgenres": ["Comedy", "Family", "Fantasy"],
+            "director": "Jon Favreau",
+            "rating": "PG",
+            "actors": ["Will Ferrell", "James Caan", "Bob Newhart", "Zooey Deschanel", "Mary Steenburgen"],
+            "platform": ["Max", "Hulu", "Disney+"],
+            "country": "USA",
+            "photo_url": "static/images/elf.jpg"
+          },          
+          {
+            "title": "Rio 2",
+            "year": 2014,
+            "subgenres": ["Animation", "Adventure", "Comedy", "Family", "Musical"],
+            "director": "Carlos Saldanha",
+            "rating": "G",
+            "actors": ["Jesse Eisenberg", "Anne Hathaway", "Jemaine Clement", "Kristin Chenoweth", "Jamie Foxx", "Andy García"],
+            "platform": ["Hulu", "Disney+"],
+            "country": "USA",
+            "photo_url": "static/images/rio-2.jpg"
+          },          
+          {
+            "title": "Moana",
+            "year": 2016,
+            "subgenres": ["Animation", "Adventure", "Family"],
+            "director": "Ron Clements, John Musker",
+            "rating": "PG",
+            "actors": ["Auli'i Cravalho", "Dwayne Johnson"],
+            "platform": ["Disney+"],
+            "country": "USA",
+            "photo_url": "static/images/moana.jpg"
+          },          
           {
             "title": "Superbad",
             "year": 2007,
@@ -31,8 +375,152 @@
             "director": "Greg Mottola",
             "rating": "R",
             "actors": ["Jonah Hill", "Michael Cera"],
-            "platform": ["Theatrical", "Streaming"],
-            "country": "USA"
+            "platform": ["Prime Video", "Netflix"],
+            "country": "USA",
+            "photo_url" :"static/images/superbad.jpg"
+          },
+          {
+            "title": "A Man Called Otto",
+            "year": 2022,
+            "subgenres": ["Comedy", "Drama"],
+            "director": "Marc Forster",
+            "rating": "PG-13",
+            "actors": ["Tom Hanks", "Mariana Treviño"],
+            "platform": ["Disney+", "Hulu"],
+            "country": "USA",
+            "photo_url": "static/images/a-man-called-otto.jpg"
+          },          
+          {
+            "title": "Ratatouille",
+            "year": 2007,
+            "subgenres": ["Animation", "Adventure", "Comedy", "Family"],
+            "director": "Brad Bird",
+            "rating": "G",
+            "actors": ["Patton Oswalt", "Lou Romano", "Janeane Garofalo", "Peter Sohn", "Brian Dennehy"],
+            "platform": ["Disney+", "Prime Video"],
+            "country": "USA",
+            "photo_url": "static/images/ratatouille.jpg"
+          },          
+          {
+            "title": "The Super Mario Bros. Movie",
+            "year": 2023,
+            "subgenres": ["Animation", "Adventure", "Comedy"],
+            "directors": ["Aaron Horvath", "Michael Jelenic"],
+            "rating": "PG",
+            "actors": ["Chris Pratt", "Anya Taylor-Joy", "Charlie Day", "Jack Black", "Keegan-Michael Key", "Seth Rogen", "Fred Armisen"],
+            "platform": ["Peacock"],
+            "country": "USA",
+            "photo_url": "static/images/the-super-mario-bros-movie.jpg"
+          },          
+          {
+            "title": "Love, Kennedy",
+            "year": 2017,
+            "subgenres": ["Drama"],
+            "director": "T.C. Christensen",
+            "rating": "PG",
+            "actors": ["Jasen Wade", "Heather Beers", "Tatum Chiniquy", "Scarlett Hazen"],
+            "platform": ["Peacock"],
+            "country": "USA",
+            "photo_url": "static/images/love-kennedy.jpg"
+          },          
+          {
+            "title": "Home Alone",
+            "year": 1990,
+            "subgenres": ["Comedy", "Family"],
+            "director": "Chris Columbus",
+            "rating": "PG",
+            "actors": ["Macaulay Culkin", "Joe Pesci", "Daniel Stern", "John Heard", "Catherine O'Hara"],
+            "platform": ["Disney+", "Prime Video"],
+            "country": "USA",
+            "photo_url": "static/images/home_alone.jpg"
+          },          
+          {
+            "title": "The Truman Show",
+            "year": 1998,
+            "subgenres": ["Comedy", "Drama", "Sci-Fi"],
+            "director": "Peter Weir",
+            "rating": "PG",
+            "actors": ["Jim Carrey", "Laura Linney", "Ed Harris", "Noah Emmerich", "Natascha McElhone"],
+            "platform": ["Paramount+", "Hulu"],
+            "country": "USA",
+            "photo_url": "static/images/truman_show.jpg"
+          },          
+          {
+            "title": "Charlotte's Web",
+            "year": 2006,
+            "subgenres": ["Adventure", "Comedy", "Family", "Fantasy"],
+            "director": "Gary Winick",
+            "rating": "G",
+            "actors": ["Dakota Fanning", "Julia Roberts (voice)", "Steve Buscemi (voice)", "John Cleese (voice)", "Oprah Winfrey (voice)", "Robert Redford (voice)"],
+            "platform": ["Paramount+", "Prime Video"],
+            "country": "USA",
+            "photo_url": "static/images/charlottes_web.jpg"
+          },          
+          {
+            "title": "Dear Santa",
+            "year": 2011,
+            "subgenres": ["Comedy", "Drama", "Romance"],
+            "director": "Jason Priestley",
+            "rating": "PG",
+            "actors": ["Amy Acker", "David Haydn-Jones", "Emma Duke"],
+            "platform": ["Paramount+"],
+            "country": "USA",
+            "photo_url": "static/images/dear_santa.jpg"
+          },          
+          {
+            "title": "The Fall Guy",
+            "year": 1981,
+            "subgenres": ["Action", "Adventure", "Comedy"],
+            "director": "Various",
+            "rating": "TV-PG",
+            "actors": ["Lee Majors", "Douglas Barr", "Heather Thomas", "Markie Post"],
+            "platform": ["Peacock", "Prime Video"],
+            "country": "USA",
+            "photo_url": "static/images/the_fall_guy.jpg"
+          },          
+          {
+            "title": "The Wolf of Wall Street",
+            "year": 2013,
+            "subgenres": ["Comedy", "Drama", "Biography"],
+            "director": "Martin Scorsese",
+            "rating": "R",
+            "actors": ["Leonardo DiCaprio", "Jonah Hill", "Margot Robbie", "Matthew McConaughey", "Kyle Chandler"],
+            "platform": ["Paramount+", "Hulu"],
+            "country": "USA",
+            "photo_url": "static/images/the_wolf_of_wallstreet.jpg"
+          },          
+          {
+            "title": "Nobody",
+            "year": 2021,
+            "subgenres": ["Action", "Crime", "Thriller"],
+            "directors": ["Ilya Naishuller"],
+            "rating": "R",
+            "actors": ["Bob Odenkirk", "Connie Nielsen", "Aleksey Serebryakov", "Christopher Lloyd", "RZA"],
+            "platform": ["Peacock", "Hulu"],
+            "country": "USA",
+            "photo_url": "static/images/nobody.jpg"
+          },          
+          {
+            "title": "Ready or Not",
+            "year": 2019,
+            "subgenres": ["Horror", "Thriller", "Dark Comedy"],
+            "director": "Matt Bettinelli-Olpin, Tyler Gillett",
+            "rating": "R",
+            "actors": ["Samara Weaving", "Adam Brody"],
+            "platform": ["Disney+"],
+            "country": "USA",
+            "photo_url": "static/images/ready-or-not.jpg"
+          },          
+          {
+            "title": "School of Rock",
+            "year": 2003,
+            "subgenres": ["Music"],
+            "director": "Richard Linklater",
+            "rating": "PG",
+            "actors": ["Jack Black", "Joan Cusack"],
+            "platform": ["Paramount+", "Hulu"],
+            "country": "USA",
+            "photo_url" :"static/images/School_Of_Rock.jpg"
           },
           {
             "title": "The Hangover",
@@ -41,8 +529,9 @@
             "director": "Todd Phillips",
             "rating": "R",
             "actors": ["Bradley Cooper", "Zach Galifianakis"],
-            "platform": ["Theatrical", "Streaming"],
-            "country": "USA"
+            "platform": ["Max", "Hulu"],
+            "country": "USA",
+            "photo_url" :"static/images/The_Hangover.jpg"
           }
         ],
         "Drama": [
@@ -53,18 +542,240 @@
             "director": "Frank Darabont",
             "rating": "R",
             "actors": ["Tim Robbins", "Morgan Freeman"],
-            "platform": ["Theatrical", "DVD", "Streaming"],
-            "country": "USA"
+            "platform": ["Prime Video"],
+            "country": "USA",
+            "photo_url" :"static/images/shawshank_redemption.jpg"
+          },      
+          {
+            "title": "The Secret Garden",
+            "year": 1993,
+            "subgenres": ["Drama", "Family", "Fantasy"],
+            "director": "Agnieszka Holland",
+            "rating": "G",
+            "actors": ["Kate Maberly", "Heydon Prowse", "Andrew Knott", "Maggie Smith"],
+            "platform": ["Paramount+", "Hulu", "Prime Video"],
+            "country": "UK",
+            "photo_url": "static/images/the_secret_garden.jpg"
           },
           {
-            "title": "A Beautiful Mind",
-            "year": 2001,
-            "subgenres": ["Biographical Drama"],
-            "director": "Ron Howard",
+            "title": "Waffle Street",
+            "year": 2015,
+            "subgenres": ["Comedy", "Drama"],
+            "directors": ["Eshom Nelms", "Ian Nelms"],
+            "rating": "G",
+            "actors": ["James Lafferty", "Danny Glover", "Julie Gonzalo", "Dale Dickey", "Marshall Bell"],
+            "platform": ["Peacock", "Prime Video"],
+            "country": "USA",
+            "photo_url": "static/images/waffle-street.jpg"
+          },          
+          {
+            "title": "The Bikeriders",
+            "year": 2023,
+            "subgenres": ["Crime", "Drama"],
+            "directors": ["Jeff Nichols"],
+            "rating": "R",
+            "actors": ["Austin Butler", "Jodie Comer", "Tom Hardy", "Michael Shannon", "Mike Faist", "Boyd Holbrook", "Damon Herriman", "Beau Knapp", "Emory Cohen", "Karl Glusman", "Toby Wallace", "Norman Reedus"],
+            "platform": ["Peacock", "Prime Video"],
+            "country": "USA",
+            "photo_url": "static/images/the-bikeriders.jpg"
+          },          
+          {
+            "title": "Bob Marley: One Love",
+            "year": 2024,
+            "subgenres": ["Biography", "Drama", "Music"],
+            "director": "Reinaldo Marcus Green",
             "rating": "PG-13",
-            "actors": ["Russell Crowe", "Jennifer Connelly"],
-            "platform": ["Theatrical", "Streaming"],
-            "country": "USA"
+            "actors": ["Kingsley Ben-Adir", "Lashana Lynch", "James Norton", "Tosin Cole", "Anthony Welsh"],
+            "platform": ["Paramount+"],
+            "country": "USA",
+            "photo_url": "static/images/bob_marley.jpg"
+          },                    
+          {
+            "title": "Canvas",
+            "year": 2020,
+            "subgenres": ["Animation", "Short", "Drama"],
+            "director": "Frank E. Abney III",
+            "rating": "G",
+            "actors": ["Frank E. Abney III", "Kashayna Johnson", "Randall M. Moore"],
+            "platform": ["Netflix"],
+            "country": "USA",
+            "photo_url": "static/images/canvas.jpg"
+          },          
+          {
+            "title": "The Karate Kid",
+            "year": 1984,
+            "subgenres": ["Action", "Drama", "Family"],
+            "director": "John G. Avildsen",
+            "rating": "PG",
+            "actors": ["Ralph Macchio", "Pat Morita", "Elisabeth Shue", "Martin Kove", "William Zabka"],
+            "platform": ["Netflix"],
+            "country": "USA",
+            "photo_url": "static/images/the-karate-kid.jpg"
+          },          
+          {
+            "title": "The Whale",
+            "year": 2022,
+            "subgenres": ["Drama"],
+            "director": "Darren Aronofsky",
+            "rating": "R",
+            "actors": ["Brendan Fraser", "Sadie Sink", "Hong Chau", "Ty Simpkins", "Samantha Morton"],
+            "platform": ["Paramount+", "Netflix","Hulu"],
+            "country": "USA",
+            "photo_url": "static/images/the_whale.jpg"
+          },          
+          {
+            "title": "IF",
+            "year": 2024,
+            "subgenres": ["Comedy", "Drama", "Family", "Fantasy"],
+            "director": "John Krasinski",
+            "rating": "PG",
+            "actors": ["Cailey Fleming", "Ryan Reynolds", "John Krasinski", "Fiona Shaw", "Phoebe Waller-Bridge", "Louis Gossett Jr.", "Steve Carell"],
+            "platform": ["Paramount+", "Prime Video"],
+            "country": "USA",
+            "photo_url": "static/images/if.jpg"
+          },          
+          {
+            "title": "Forrest Gump",
+            "year": 1994,
+            "subgenres": ["Biographical"],
+            "director": "Robert Zemeckis",
+            "rating": "PG-13",
+            "actors": ["Tom Hanks", "Robin Wright"],
+            "platform": ["Paramount+", "Hulu","Prime Video"],
+            "country": "USA",
+            "photo_url" :"static/images/forrest_gump.jpg"
+          },
+          {
+            "title": "A King in New York",
+            "year": 1957,
+            "subgenres": ["Comedy", "Drama", "Satire"],
+            "director": "Charlie Chaplin",
+            "rating": "G",
+            "actors": ["Charlie Chaplin", "Maxine Audley", "Jerry Desmonde", "Oliver Johnston", "Dawn Addams", "Sid James"],
+            "platform": ["Max", "Prime Video","Hulu"],
+            "country": "UK",
+            "photo_url": "static/images/a_king_in_new_york.jpg"
+          },          
+          {
+            "title": "A Christmas Story Christmas",
+            "year": 2022,
+            "subgenres": ["Comedy", "Family", "Holiday"],
+            "director": "Clay Kaytis",
+            "rating": "PG",
+            "actors": ["Peter Billingsley", "Erinn Hayes", "Scott Schwartz", "RD Robb", "Ian Petrella", "Zack Ward", "Julie Hagerty"],
+            "platform": ["Hulu", "Max"],
+            "country": "USA",
+            "photo_url": "static/images/a_christmas_story_christmas.jpg"
+          },          
+          {
+            "title": "Little Women",
+            "year": 2019,
+            "subgenres": ["Drama", "Romance"],
+            "director": "Greta Gerwig",
+            "rating": "PG",
+            "actors": ["Saoirse Ronan", "Emma Watson", "Florence Pugh", "Eliza Scanlen", "Laura Dern", "Timothée Chalamet", "Meryl Streep"],
+            "platform": ["Hulu"],
+            "country": "USA",
+            "photo_url": "static/images/little_women.jpg"
+          },          
+          {
+            "title": "Dune",
+            "year": 2021,
+            "subgenres": ["Adventure", "Drama", "Sci-Fi"],
+            "director": "Denis Villeneuve",
+            "rating": "PG-13",
+            "actors": ["Timothée Chalamet", "Rebecca Ferguson", "Oscar Isaac", "Josh Brolin", "Stellan Skarsgård", "Dave Bautista", "Stephen McKinley Henderson", "Zendaya", "Chang Chen", "Sharon Duncan-Brewster", "Charlotte Rampling", "Jason Momoa", "Javier Bardem"],
+            "platform": ["Max", "Hulu","Prime Video"],
+            "country": "USA",
+            "photo_url": "static/images/dune.jpg"
+          },        
+          {
+            "title": "Tarzan",
+            "year": 2013,
+            "subgenres": ["Animation", "Adventure", "Family"],
+            "director": "Reinhard Klooss",
+            "rating": "G",
+            "actors": ["Kellan Lutz", "Spencer Locke"],
+            "platform": ["Disney+"],
+            "country": "Germany",
+            "photo_url": "static/images/tarzan.jpg"
+          },          
+          {
+            "title": "Tangerine",
+            "year": 2015,
+            "subgenres": ["Comedy", "Crime", "Drama"],
+            "director": "Sean Baker",
+            "rating": "R",
+            "actors": ["Kitana Kiki Rodriguez", "Mya Taylor", "Karren Karagulian", "Mickey O'Hagan", "Alla Tumanian", "James Ransone"],
+            "platform": ["Netflix", "Hulu","Disney+","Prime Video"],
+            "country": "USA",
+            "photo_url": "static/images/tangerine.jpg"
+          },          
+          {
+            "title": "Joker",
+            "year": 2019,
+            "subgenres": ["Crime", "Drama", "Thriller"],
+            "director": "Todd Phillips",
+            "rating": "R",
+            "actors": ["Joaquin Phoenix", "Robert De Niro", "Zazie Beetz", "Frances Conroy"],
+            "platform": ["Max", "Hulu", "Prime Video"],
+            "country": "USA",
+            "photo_url": "static/images/joker.jpg"
+          },    
+          {
+            "title": "The Lion King",
+            "year": 2019,
+            "subgenres": ["Animation", "Adventure", "Drama"],
+            "director": "Jon Favreau",
+            "rating": "PG",
+            "actors": ["Donald Glover", "Beyoncé", "Seth Rogen"],
+            "platform": ["Disney+", "Prime Video"],
+            "country": "USA",
+            "photo_url": "static/images/the_Lion_King.jpg"
+          },
+          {
+            "title": "It Ends with Us",
+            "year": 2024,
+            "subgenres": ["Drama", "Romance"],
+            "director": "Justin Baldoni",
+            "rating": "R",
+            "actors": ["Blake Lively", "Justin Baldoni", "Brandon Sklenar"],
+            "platform": ["Netflix"],
+            "country": "USA",
+            "photo_url": "static/images/it-ends-with-us.jpg"
+          },          
+          {
+            "title": "Harriet",
+            "year": 2019,
+            "subgenres": ["Biography", "Drama", "History"],
+            "director": "Kasi Lemmons",
+            "rating": "PG-13",
+            "actors": ["Cynthia Erivo", "Leslie Odom Jr.", "Joe Alwyn", "Janelle Monáe"],
+            "platform": ["Disney+", "Hulu"],
+            "country": "USA",
+            "photo_url": "static/images/harriet.jpg"
+          },          
+          {
+            "title": "Sleeping Dogs",
+            "year": 2024,
+            "subgenres": ["Action", "Thriller"],
+            "director": "Adam Cooper",
+            "rating": "R",
+            "actors": ["Russell Crowe", "Karen Gillan"],
+            "platform": ["Disney+", "Hulu"],
+            "country": "USA",
+            "photo_url": "static/images/sleeping_dogs.jpg"
+          },          
+          {
+            "title": "The Blind Side",
+            "year": 2009,
+            "subgenres": ["Sports"],
+            "director": "John Lee Hancock",
+            "rating": "PG-13",
+            "actors": ["Sandra Bullock", "Quinton Aaron"],
+            "platform": ["Prime Video"],
+            "country": "USA",
+            "photo_url" :"static/images/The_Blind_Side.jpg"
           }
         ],
         "Horror": [
@@ -75,9 +786,131 @@
             "director": "Jordan Peele",
             "rating": "R",
             "actors": ["Daniel Kaluuya", "Allison Williams"],
-            "platform": ["Theatrical", "Streaming"],
-            "country": "USA"
+            "platform": ["Prime Video"],
+            "country": "USA",
+            "photo_url" :"static/images/Get_Out.jpg"
           },
+          {
+            "title": "Old",
+            "year": 2021,
+            "subgenres": ["Horror", "Mystery", "Thriller"],
+            "directors": ["M. Night Shyamalan"],
+            "rating": "PG-13",
+            "actors": ["Gael García Bernal", "Vicky Krieps", "Rufus Sewell", "Alex Wolff", "Thomasin McKenzie", "Abbey Lee", "Nikki Amuka-Bird", "Ken Leung", "Eliza Scanlen", "Aaron Pierre", "Embeth Davidtz", "Emun Elliott"],
+            "platform": ["Peacock"],
+            "country": "USA",
+            "photo_url": "static/images/old.jpg"
+          },          
+          {
+            "title": "Speak No Evil",
+            "year": 2022,
+            "subgenres": ["Horror", "Mystery", "Thriller"],
+            "directors": ["Christian Tafdrup"],
+            "rating": "Not Rated",
+            "actors": ["Morten Burian", "Sidsel Siem Koch", "Fedja van Huêt", "Karina Smulders", "Liva Forsberg"],
+            "platform": ["Peacock"],
+            "country": "Denmark",
+            "photo_url": "static/images/speak-no-evil.jpg"
+          },          
+          {
+            "title": "Tourist Trap",
+            "year": 1979,
+            "subgenres": ["Horror", "Slasher", "Supernatural"],
+            "directors": ["David Schmoeller"],
+            "rating": "PG",
+            "actors": ["Chuck Connors", "Jocelyn Jones", "Jon Van Ness", "Robin Sherwood", "Tanya Roberts"],
+            "platform": ["Peacock", "Prime Video"],
+            "country": "USA",
+            "photo_url": "static/images/tourist-trap.jpg"
+          },          
+          {
+            "title": "Doctor Strange in the Multiverse of Madness",
+            "year": 2022,
+            "subgenres": ["Superhero", "Action", "Adventure", "Fantasy"],
+            "director": "Sam Raimi",
+            "rating": "PG-13",
+            "actors": ["Benedict Cumberbatch", "Elizabeth Olsen", "Chiwetel Ejiofor", "Benedict Wong", "Xochitl Gomez", "Rachel McAdams"],
+            "platform": ["Disney+"],
+            "country": "USA",
+            "photo_url": "static/images/Doctor_Strange_Mult_of_Mad.jpg"
+          },          
+          {
+            "title": "Gremlins",
+            "year": 1984,
+            "subgenres": ["Comedy", "Horror", "Fantasy"],
+            "director": "Joe Dante",
+            "rating": "PG",
+            "actors": ["Zach Galligan", "Phoebe Cates", "Hoyt Axton", "Polly Holliday", "Frances Lee McCain", "Howie Mandel (voice)"],
+            "platform": ["Max", "Hulu"],
+            "country": "USA",
+            "photo_url": "static/images/gremlins.jpg"
+          },          
+          {
+            "title": "The Watchers",
+            "year": 2024,
+            "subgenres": ["Horror", "Fantasy", "Mystery", "Thriller"],
+            "director": "Ishana Night Shyamalan",
+            "rating": "PG-13",
+            "actors": ["Dakota Fanning", "Georgina Campbell", "Olwen Fouéré", "Oliver Finnegan"],
+            "platform": ["Max", "Hulu"],
+            "country": "USA",
+            "photo_url": "static/images/the_watchers.jpg"
+          },          
+          {
+            "title": "It",
+            "year": 2017,
+            "subgenres": ["Horror", "Thriller", "Supernatural"],
+            "director": "Andy Muschietti",
+            "rating": "R",
+            "actors": ["Bill Skarsgård", "Jaeden Lieberher", "Finn Wolfhard", "Sophia Lillis", "Jack Dylan Grazer", "Wyatt Oleff", "Chosen Jacobs", "Jeremy Ray Taylor"],
+            "platform": ["Max", "Hulu"],
+            "country": "USA",
+            "photo_url": "static/images/it.jpg"
+          },          
+          {
+            "title": "Smile",
+            "year": 2022,
+            "subgenres": ["Horror", "Psychological", "Supernatural"],
+            "director": "Parker Finn",
+            "rating": "R",
+            "actors": ["Sosie Bacon", "Jessie T. Usher", "Kyle Gallner"],
+            "platform": ["Disney+", "Hulu", "Paramount+"],
+            "country": "USA",
+            "photo_url": "static/images/smile.jpg"
+          },          
+          {
+            "title": "The Haunting: House on Haunted Hill",
+            "year": 2009,
+            "subgenres": ["Horror", "Mystery", "Thriller"],
+            "director": "Mick Garris",
+            "rating": "R",
+            "actors": ["Alyssa Milano", "Ethan Embry", "Jaime King", "Tom Riley", "Catherine Tate", "Maggie Lawson"],
+            "platform": ["Prime Video"],
+            "country": "USA",
+            "photo_url": "static/images/the_haunting.jpg"
+          },          
+          {
+            "title": "Krampus",
+            "year": 2015,
+            "subgenres": ["Black Comedy", "Folk Horror", "Holiday Horror"],
+            "director": "Michael Dougherty",
+            "rating": "PG-13",
+            "actors": ["Adam Scott", "Toni Collette", "David Koechner", "Allison Tolman", "Emjay Anthony", "Stefania LaVie Owen", "Conchata Ferrell"],
+            "platform": ["Peacock", "Max","Prime Video"],
+            "country": "USA",
+            "photo_url": "static/images/krampus.jpg"
+          },
+          {
+            "title": "Jaws",
+            "year": 1975,
+            "subgenres": ["Adventure", "Horror", "Thriller"],
+            "director": "Steven Spielberg",
+            "rating": "PG",
+            "actors": ["Roy Scheider", "Robert Shaw", "Richard Dreyfuss", "Lorraine Gary"],
+            "platform": ["Netflix", "Prime Video"],
+            "country": "USA",
+            "photo_url": "static/images/jaws.jpg"
+          },          
           {
             "title": "The Conjuring",
             "year": 2013,
@@ -85,8 +918,64 @@
             "director": "James Wan",
             "rating": "R",
             "actors": ["Patrick Wilson", "Vera Farmiga"],
-            "platform": ["Theatrical", "Streaming"],
-            "country": "USA"
+            "platform": ["Max"],
+            "country": "USA",
+            "photo_url" :"static/images/the_conjuring.jpg"
+          },
+          {
+            "title": "Tarot",
+            "year": 2024,
+            "subgenres": ["Horror", "Supernatural"],
+            "directors": ["Spenser Cohen", "Anna Halberg"],
+            "rating": "PG-13",
+            "actors": ["Harriet Slater", "Adain Bradley", "Jacob Batalon", "Avantika", "Humberly González", "Larsen Thompson"],
+            "platform": ["Netflix"],
+            "country": "USA",
+            "photo_url": "static/images/tarot.jpg"
+          },          
+          {
+            "title": "Don't Move",
+            "year": 2024,
+            "subgenres": ["Horror", "Thriller", "Suspense"],
+            "directors": ["Adam Schindler", "Brian Netto"],
+            "rating": "R",
+            "actors": ["Kelsey Asbille", "Finn Wittrock", "Moray Treadwell", "Daniel Francis"],
+            "platform": ["Netflix"],
+            "country": "USA",
+            "photo_url": "static/images/dont-move.jpg"
+          },          
+          {
+            "title": "A Quiet Place",
+            "year": 2018,
+            "subgenres": ["Survival Horror"],
+            "director": "John Krasinski",
+            "rating": "PG-13",
+            "actors": ["Emily Blunt", "John Krasinski"],
+            "platform": ["Paramount+", "Hulu"],
+            "country": "USA",
+            "photo_url" :"static/images/a_quiet_place.jpg"
+          },
+          {
+            "title": "The Exorcist",
+            "year": 1973,
+            "subgenres": ["Horror", "Mystery", "Thriller"],
+            "director": "William Friedkin",
+            "rating": "R",
+            "actors": ["Ellen Burstyn", "Max von Sydow", "Linda Blair", "Jason Miller"],
+            "platform": ["Paramount+", "Hulu"],
+            "country": "USA",
+            "photo_url": "static/images/the_exorcist.jpg"
+          },          
+          {
+            "title": "Hereditary",
+            "year": 2018,
+            "subgenres": ["Psychological Horror"],
+            "director": "Ari Aster",
+            "rating": "R",
+            "actors": ["Toni Collette", "Alex Wolff"],
+            "platform": ["Hulu"],
+            "country": "USA",
+            "photo_url" :"static/images/hereditary.jpg"
           }
         ],
         "Romance": [
@@ -97,9 +986,197 @@
             "director": "Damien Chazelle",
             "rating": "PG-13",
             "actors": ["Ryan Gosling", "Emma Stone"],
-            "platform": ["Theatrical", "Streaming"],
-            "country": "USA"
+            "platform": ["Hulu", "Disney+"],
+            "country": "USA",
+            "photo_url" :"static/images/lalaland.jpg"
           },
+          {
+            "title": "Gnomeo & Juliet",
+            "year": 2011,
+            "subgenres": ["Animation", "Adventure", "Comedy", "Family"],
+            "director": "Kelly Asbury",
+            "rating": "G",
+            "actors": ["James McAvoy", "Emily Blunt", "Michael Caine"],
+            "platform": ["Disney+","Prime Video"],
+            "country": "USA",
+            "photo_url": "static/images/gnomeo-and-juliet.jpg"
+          },          
+          {
+            "title": "Gone with the Wind",
+            "year": 1939,
+            "subgenres": ["Drama", "Romance", "War"],
+            "director": "Victor Fleming (with contributions from George Cukor and Sam Wood)",
+            "rating": "G",
+            "actors": ["Clark Gable", "Vivien Leigh", "Leslie Howard", "Olivia de Havilland"],
+            "platform": ["Max", "Hulu"],
+            "country": "USA",
+            "photo_url": "static/images/a_hollywood_christmas.jpg"
+          },          
+          {
+            "title": "Carol",
+            "year": 2015,
+            "subgenres": ["Drama", "Romance"],
+            "director": "Todd Haynes",
+            "rating": "R",
+            "actors": ["Cate Blanchett", "Rooney Mara", "Kyle Chandler", "Sarah Paulson", "Jake Lacy"],
+            "platform": ["Paramount+", "Netflix","Hulu"],
+            "country": "USA",
+            "photo_url": "static/images/carol.jpg"
+          },     
+          {
+            "title": "A Hollywood Christmas",
+            "year": 2022,
+            "subgenres": ["Comedy", "Drama", "Romance"],
+            "director": "Unknown",
+            "rating": "PG",
+            "actors": ["Jessika Van", "Josh Swickard", "Anissa Borrego"],
+            "platform": ["Max","Hulu"],
+            "country": "USA",
+            "photo_url": "static/images/a-hollywood-christmas.jpg"
+          },          
+          {
+            "title": "Breakfast at Tiffany's",
+            "year": 1961,
+            "subgenres": ["Romantic Comedy", "Drama"],
+            "director": "Blake Edwards",
+            "rating": "G",
+            "actors": ["Audrey Hepburn", "George Peppard", "Patricia Neal", "Buddy Ebsen", "Mickey Rooney"],
+            "platform": ["Prime Video", "Paramount+"],
+            "country": "USA",
+            "photo_url": "static/images/breakfast_at_tiffanies.jpg"
+        },        
+          {
+            "title": "Am I OK?",
+            "year": 2022,
+            "subgenres": ["Comedy", "Drama", "Romance"],
+            "directors": ["Stephanie Allynne", "Tig Notaro"],
+            "rating": "R",
+            "actors": ["Dakota Johnson", "Sonoya Mizuno", "Jermaine Fowler", "Kiersey Clemons", "Whitney Cummings"],
+            "platform": ["Max", "Hulu"],
+            "country": "USA",
+            "photo_url": "static/images/am_i_ok.jpg"
+          },          
+          {
+            "title": "Last Christmas",
+            "year": 2019,
+            "subgenres": ["Comedy", "Romance", "Holiday"],
+            "director": "Paul Feig",
+            "rating": "PG-13",
+            "actors": ["Emilia Clarke", "Henry Golding", "Michelle Yeoh", "Emma Thompson"],
+            "platform": ["Max", "Hulu"],
+            "country": "USA",
+            "photo_url": "static/images/last_christmas.jpg"
+          },          
+          {
+            "title": "Christmas Town",
+            "year": 2019,
+            "subgenres": ["Drama", "Family", "Romance"],
+            "director": "David Weaver",
+            "rating": "G",
+            "actors": ["Candace Cameron Bure", "Tim Rozon", "Beth Broderick"],
+            "platform": ["Peacock"],
+            "country": "USA",
+            "photo_url": "static/images/christmas-town.jpg"
+          },         
+          {
+            "title": "Eternal Sunshine of the Spotless Mind",
+            "year": 2004,
+            "subgenres": ["Drama", "Romance", "Sci-Fi"],
+            "directors": ["Michel Gondry"],
+            "rating": "R",
+            "actors": ["Jim Carrey", "Kate Winslet", "Kirsten Dunst", "Mark Ruffalo", "Elijah Wood", "Tom Wilkinson"],
+            "platform": ["Peacock", "Netflix"],
+            "country": "USA",
+            "photo_url": "static/images/eternal-sunshine-of-the-spotless-mind.jpg"
+          },          
+          {
+            "title": "Redeeming Love",
+            "year": 2022,
+            "subgenres": ["Christian", "Western", "Romance"],
+            "directors": ["D.J. Caruso"],
+            "rating": "PG-13",
+            "actors": ["Abigail Cowen", "Tom Lewis", "Eric Dane", "Famke Janssen", "Logan Marshall-Green"],
+            "platform": ["Peacock", "Hulu"],
+            "country": "USA",
+            "photo_url": "static/images/redeeming-love.jpg"
+          },           
+          {
+            "title": "I Believe in Santa",
+            "year": 2022,
+            "subgenres": ["Comedy", "Family"],
+            "director": "Alex Ranarivelo",
+            "rating": "PG",
+            "actors": ["Christina Moore", "John Ducey", "Violet McGraw"],
+            "platform": ["Netflix"],
+            "country": "USA",
+            "photo_url": "static/images/i-believe-in-santa.jpg"
+          },
+          {
+            "title": "After",
+            "year": 2019,
+            "subgenres": ["Drama", "Romance"],
+            "director": "Jenny Gage",
+            "rating": "PG-13",
+            "actors": ["Josephine Langford", "Hero Fiennes Tiffin", "Selma Blair", "Inanna Sarkis", "Shane Paul McGhie"],
+            "platform": ["Netflix"],
+            "country": "USA",
+            "photo_url": "static/images/after.jpg"
+          },          
+          {
+            "title": "The Little Mermaid",
+            "year": 2023,
+            "subgenres": ["Animation", "Adventure", "Family", "Musical", "Romantic Fantasy"],
+            "director": "Rob Marshall",
+            "rating": "PG",
+            "actors": ["Halle Bailey", "Jonah Hauer-King", "Melissa McCarthy", "Javier Bardem", "Daveed Diggs", "Jacob Tremblay", "Awkwafina"],
+            "platform": ["Disney+"],
+            "country": "USA",
+            "photo_url": "static/images/the_little_mermaid.jpg.jpg"
+          },          
+          {
+            "title": "The Holiday",
+            "year": 2006,
+            "subgenres": ["Comedy", "Romance"],
+            "director": "Nancy Meyers",
+            "rating": "PG-13",
+            "actors": ["Cameron Diaz", "Kate Winslet", "Jude Law", "Jack Black", "Eli Wallach"],
+            "platform": ["Prime Video", "Hulu"],
+            "country": "USA",
+            "photo_url": "static/images/the_holiday.jpg"
+          },          
+          {
+            "title": "Poor Things",
+            "year": 2023,
+            "subgenres": ["Comedy", "Drama", "Romance", "Sci-Fi", "Steampunk"],
+            "director": "Yorgos Lanthimos",
+            "rating": "R",
+            "actors": ["Emma Stone", "Mark Ruffalo", "Willem Dafoe", "Ramy Youssef", "Christopher Abbott", "Jerrod Carmichael"],
+            "platform": ["Disney+", "Hulu"],
+            "country": "USA",
+            "photo_url": "static/images/poor_things.jpg"
+          },          
+          {
+            "title": "Fit for Christmas",
+            "year": 2022,
+            "subgenres": ["Comedy", "Drama", "Romance"],
+            "director": "Jessica Harmon",
+            "rating": "PG",
+            "actors": ["Amanda Kloots", "Paul Greene", "Rebecca Budig", "Stephan Miers"],
+            "platform": ["Paramount+"],
+            "country": "USA",
+            "photo_url": "static/images/fit_for_christmas.jpg"
+          },          
+          {
+            "title": "Grease",
+            "year": 1978,
+            "subgenres": ["Musical", "Romance", "Comedy"],
+            "director": "Randal Kleiser",
+            "rating": "PG",
+            "actors": ["John Travolta", "Olivia Newton-John", "Stockard Channing", "Jeff Conaway", "Didi Conn"],
+            "platform": ["Paramount+", "Prime Video"],
+            "country": "USA",
+            "photo_url": "static/images/grease.jpg"
+          },          
           {
             "title": "Pride and Prejudice",
             "year": 2005,
@@ -107,8 +1184,64 @@
             "director": "Joe Wright",
             "rating": "PG",
             "actors": ["Keira Knightley", "Matthew Macfadyen"],
-            "platform": ["Theatrical", "Streaming"],
-            "country": "USA"
+            "platform": ["Peacock","Prime Video"],
+            "country": "USA",
+            "photo_url" :"static/images/pride_and_prejudice.jpg"
+          },
+          {
+            "title": "The Princess Diaries 2: Royal Engagement",
+            "year": 2004,
+            "subgenres": ["Comedy", "Family", "Romance"],
+            "director": "Garry Marshall",
+            "rating": "G",
+            "actors": ["Julie Andrews", "Anne Hathaway", "Hector Elizondo", "Chris Pine"],
+            "platform": ["Hulu", "Disney+"],
+            "country": "USA",
+            "photo_url": "static/images/princess_diaries_2.jpg"
+          },          
+          {
+            "title": "The Fault in Our Stars",
+            "year": 2014,
+            "subgenres": ["Teen Romance"],
+            "director": "Josh Boone",
+            "rating": "PG-13",
+            "actors": ["Shailene Woodley", "Ansel Elgort"],
+            "platform": ["Disney+"],
+            "country": "USA",
+            "photo_url" :"static/images/the_fault_in_our_stars.jpg"
+          },
+          {
+            "title": "You Again",
+            "year": 2010,
+            "subgenres": ["Comedy", "Romance"],
+            "director": "Andy Fickman",
+            "rating": "PG",
+            "actors": ["Kristen Bell", "Odette Yustman", "Jamie Lee Curtis", "Sigourney Weaver", "Betty White"],
+            "platform": ["Hulu", "Disney+"],
+            "country": "USA",
+            "photo_url": "static/images/you_again.jpg"
+          },          
+          {
+            "title": "We Live in Time",
+            "year": 2024,
+            "subgenres": ["Romance", "Drama"],
+            "director": "John Crowley",
+            "rating": "R",
+            "actors": ["Florence Pugh", "Andrew Garfield"],
+            "platform": ["Prime Video"],
+            "country": "USA",
+            "photo_url": "static/images/we_live_in_time.jpg"
+          },
+          {
+            "title": "The Notebook",
+            "year": 2004,
+            "subgenres": ["Drama"],
+            "director": "Nick Cassavetes",
+            "rating": "R",
+            "actors": ["Ryan Gosling", "Rachel McAdams"],
+            "platform": ["Netflix"],
+            "country": "USA",
+            "photo_url" :"static/images/The_Notebook.jpg"
           }
         ],
         "Science Fiction": [
@@ -119,9 +1252,76 @@
             "director": "Christopher Nolan",
             "rating": "PG-13",
             "actors": ["Leonardo DiCaprio", "Joseph Gordon-Levitt"],
-            "platform": ["Theatrical", "Streaming"],
-            "country": "USA"
+            "platform": ["Peacock"],
+            "country": "USA",
+            "photo_url" :"static/images/inception.jpg"
           },
+          {
+            "title": "A Shaun the Sheep Movie: Farmageddon",
+            "year": 2019,
+            "subgenres": ["Animation", "Adventure", "Comedy", "Family", "Sci-Fi"],
+            "directors": ["Richard Phelan", "Will Becher"],
+            "rating": "G",
+            "actors": ["Justin Fletcher", "John Sparkes", "Kate Harbour", "Rich Webber", "Amalia Vitale"],
+            "platform": ["Netflix"],
+            "country": "UK",
+            "photo_url": "static/images/a-shaun-the-sheep-movie-farmageddon.jpg"
+          },          
+          {
+            "title": "Mr. Peabody & Sherman",
+            "year": 2014,
+            "subgenres": ["Animation", "Adventure", "Comedy", "Family", "Sci-Fi"],
+            "directors": ["Rob Minkoff"],
+            "rating": "PG",
+            "actors": ["Ty Burrell", "Max Charles", "Stephen Colbert", "Leslie Mann", "Ariel Winter", "Allison Janney"],
+            "platform": ["Netflix"],
+            "country": "USA",
+            "photo_url": "static/images/mr-peabody-sherman.jpg"
+          },          
+          {
+            "title": "Coneheads",
+            "year": 1993,
+            "subgenres": ["Comedy", "Sci-Fi"],
+            "director": "Steve Barron",
+            "rating": "PG",
+            "actors": ["Dan Aykroyd", "Jane Curtin", "Michelle Burke", "Phil Hartman", "Sinbad", "David Spade"],
+            "platform": ["Paramount+"],
+            "country": "USA",
+            "photo_url": "static/images/coneheads.jpg"
+          },          
+          {
+            "title": "The Matrix",
+            "year": 1999,
+            "subgenres": ["Action", "Sci-Fi"],
+            "directors": ["Lana Wachowski", "Lilly Wachowski"],
+            "rating": "R",
+            "actors": ["Keanu Reeves", "Laurence Fishburne", "Carrie-Anne Moss", "Hugo Weaving", "Joe Pantoliano"],
+            "platform": ["Paramount+", "Hulu"],
+            "country": "USA",
+            "photo_url": "static/images/the_matrix.jpg"
+          },          
+          {
+            "title": "Transformers",
+            "year": 2007,
+            "subgenres": ["Action", "Adventure", "Sci-Fi"],
+            "director": "Michael Bay",
+            "rating": "PG-13",
+            "actors": ["Shia LaBeouf", "Megan Fox", "Josh Duhamel", "Tyrese Gibson", "Rachael Taylor", "Anthony Anderson", "Jon Voight"],
+            "platform": ["Paramount+"],
+            "country": "USA",
+            "photo_url": "static/images/transformers.jpg"
+          },          
+          {
+            "title": "WALL-E",
+            "year": 2008,
+            "subgenres": ["Animation", "Adventure", "Family"],
+            "director": "Andrew Stanton",
+            "rating": "G",
+            "actors": ["Ben Burtt", "Elissa Knight"],
+            "platform": ["Disney+"],
+            "country": "USA",
+            "photo_url": "static/images/wall-e.jpg"
+          },          
           {
             "title": "Blade Runner 2049",
             "year": 2017,
@@ -129,10 +1329,188 @@
             "director": "Denis Villeneuve",
             "rating": "R",
             "actors": ["Ryan Gosling", "Harrison Ford"],
-            "platform": ["Theatrical", "Streaming"],
-            "country": "USA"
-          }
-        ]
-      }
-    }
-  }
+            "platform": ["Paramount+", "Hulu","Prime Video"],
+            "country": "USA",
+            "photo_url" :"static/images/blade_runner.jpg"
+          },
+          {
+            "title": "Big Hero 6",
+            "year": 2014,
+            "subgenres": ["Animation", "Adventure", "Family", "Superhero"],
+            "director": "Don Hall, Chris Williams",
+            "rating": "PG",
+            "actors": ["Ryan Potter", "Scott Adsit", "Jamie Chung", "T.J. Miller", "Daniel Henney", "Damon Wayans Jr.", "Genesis Rodriguez", "James Cromwell", "Maya Rudolph", "Alan Tudyk"],
+            "platform": ["Disney+"],
+            "country": "USA",
+            "photo_url": "static/images/big-hero-6.jpg"
+          },      
+          {
+            "title": "Dark Star",
+            "year": 1974,
+            "subgenres": ["Comedy", "Sci-Fi"],
+            "directors": ["John Carpenter"],
+            "rating": "PG",
+            "actors": ["Dan O'Bannon", "Brian Narelle", "Cal Kuniholm", "Dre Pahich"],
+            "platform": ["Peacock"],
+            "country": "USA",
+            "photo_url": "static/images/dark-star.jpg"
+          },              
+          {
+            "title": "The Avengers",
+            "year": 2012,
+            "subgenres": ["Action", "Adventure", "Superhero"],
+            "director": "Joss Whedon",
+            "rating": "PG-13",
+            "actors": ["Robert Downey Jr.", "Chris Evans", "Mark Ruffalo", "Chris Hemsworth", "Scarlett Johansson", "Jeremy Renner", "Tom Hiddleston"],
+            "platform": ["Disney+"],
+            "country": "USA",
+            "photo_url": "static/images/the-avengers.jpg"
+          },          
+          {
+            "title": "Home",
+            "year": 2015,
+            "subgenres": ["Animation", "Adventure", "Comedy", "Family", "Sci-Fi"],
+            "directors": ["Tim Johnson"],
+            "rating": "PG",
+            "actors": ["Jim Parsons", "Rihanna", "Steve Martin", "Jennifer Lopez", "Matt Jones"],
+            "platform": ["Peacock"],
+            "country": "USA",
+            "photo_url": "static/images/home.jpg"
+          },          
+          {
+            "title": "Oblivion",
+            "year": 2013,
+            "subgenres": ["Action", "Adventure", "Sci-Fi"],
+            "director": "Joseph Kosinski",
+            "rating": "PG-13",
+            "actors": ["Tom Cruise", "Morgan Freeman", "Olga Kurylenko", "Andrea Riseborough", "Nikolaj Coster-Waldau", "Melissa Leo"],
+            "platform": ["Netflix"],
+            "country": "USA",
+            "photo_url": "static/images/oblivion.jpg"
+          },          
+          {
+            "title": "Dawn of the Planet of the Apes",
+            "year": 2014,
+            "subgenres": ["Action", "Adventure", "Drama", "Sci-Fi"],
+            "director": "Matt Reeves",
+            "rating": "PG-13",
+            "actors": ["Andy Serkis", "Jason Clarke", "Gary Oldman", "Keri Russell"],
+            "platform": ["Disney+", "Hulu","Prime Video"],
+            "country": "USA",
+            "photo_url": "static/images/dawn_of_the_planet_of_the_apes.jpg"
+          },          
+          {
+            "title": "Spaceman",
+            "year": 2024,
+            "subgenres": ["Drama", "Sci-Fi"],
+            "directors": ["Johan Renck"],
+            "rating": "R",
+            "actors": ["Adam Sandler", "Carey Mulligan", "Paul Dano", "Kunal Nayyar", "Isabella Rossellini"],
+            "platform": ["Netflix"],
+            "country": "USA",
+            "photo_url": "static/images/spaceman.jpg"
+          },          
+          {
+            "title": "Lightyear",
+            "year": 2022,
+            "subgenres": ["Animation", "Action", "Adventure", "Family", "Sci-Fi"],
+            "director": "Angus MacLane",
+            "rating": "PG",
+            "actors": ["Chris Evans", "Keke Palmer", "Peter Sohn", "Taika Waititi", "Dale Soules", "James Brolin", "Uzo Aduba"],
+            "platform": ["Prime Video", "Disney+"],
+            "country": "USA",
+            "photo_url": "static/images/lightyear.jpg"
+          },
+          {
+            "title": "Furiosa: A Mad Max Saga",
+            "year": 2024,
+            "subgenres": ["Action", "Adventure", "Sci-Fi", "Thriller"],
+            "director": "George Miller",
+            "rating": "R",
+            "actors": ["Anya Taylor-Joy", "Chris Hemsworth", "Tom Burke", "Alyla Browne"],
+            "platform": ["Max", "Hulu"],
+            "country": "USA",
+            "photo_url": "static/images/furiosa.jpg"
+          },          
+          {
+            "title": "Dune",
+            "year": 2021,
+            "subgenres": ["Adventure", "Drama", "Sci-Fi"],
+            "director": "Denis Villeneuve",
+            "rating": "PG-13",
+            "actors": ["Timothée Chalamet", "Rebecca Ferguson", "Oscar Isaac", "Josh Brolin", "Stellan Skarsgård", "Dave Bautista", "Stephen McKinley Henderson", "Zendaya", "Chang Chen", "Sharon Duncan-Brewster", "Charlotte Rampling", "Jason Momoa", "Javier Bardem"],
+            "platform": ["Max", "Hulu","Prime Video"],
+            "country": "USA",
+            "photo_url": "static/images/dune.jpg"
+          },                          
+          {
+            "title": "Alien",
+            "year": 1979,
+            "subgenres": ["Horror", "Sci-Fi", "Thriller"],
+            "director": "Ridley Scott",
+            "rating": "R",
+            "actors": ["Sigourney Weaver", "Tom Skerritt", "John Hurt"],
+            "platform": ["Disney+", "Hulu"],
+            "country": "USA",
+            "photo_url": "static/images/alien.jpg"
+          },          
+          {
+            "title": "Monsters",
+            "year": 2010,
+            "subgenres": ["Horror", "Sci-Fi"],
+            "directors": ["Gareth Edwards"],
+            "rating": "R",
+            "actors": ["Scoot McNairy", "Whitney Able"],
+            "platform": ["Peacock"],
+            "country": "UK",
+            "photo_url": "static/images/monsters.jpg"
+          },          
+          {
+            "title": "Jurassic Park",
+            "year": 1993,
+            "subgenres": ["Adventure", "Sci-Fi", "Thriller"],
+            "directors": ["Steven Spielberg"],
+            "rating": "PG-13",
+            "actors": ["Sam Neill", "Laura Dern", "Jeff Goldblum", "Richard Attenborough"],
+            "platform": ["Peacock","Max","Hulu"],
+            "country": "USA",
+            "photo_url": "static/images/jurassic-park.jpg"
+          },          
+          {
+            "title": "E.T. the Extra-Terrestrial",
+            "year": 1982,
+            "subgenres": ["Family"],
+            "director": "Steven Spielberg",
+            "rating": "PG",
+            "actors": ["Henry Thomas", "Drew Barrymore"],
+            "platform": ["Hulu"],
+            "country": "USA",
+            "photo_url" :"static/images/ET_the_extra_terrestrial.jpg"
+          },
+          {
+            "title": "2001: A Space Odyssey",
+            "year": "1968",
+            "subgenres": ["Adventure", "Sci-Fi", "Drama"],
+            "director": "Stanley Kubrick",
+            "rating": "G",
+            "actors": ["Keir Dullea", "Gary Lockwood", "William Sylvester", "Daniel Richter"],
+            "platform": ["Max", "Hulu"],
+            "country": "USA",
+            "photo_url": "static/images/2001_a_space_odyssey.jpg"
+          },
+          {
+            "title": "Interstellar",
+            "year": 2014,
+            "subgenres": ["Space Exploration"],
+            "director": "Christopher Nolan",
+            "rating": "PG-13",
+            "actors": ["Matthew McConaughey", "Anne Hathaway"],
+            "platform": ["Paramount+", "Prime Video"], 
+            "country": "USA",
+            "photo_url" :"static/images/interstellar.jpg"
+             }
+
+             ]
+              } 
+              } 
+            }

@@ -27,6 +27,26 @@
         {
             "username": "myUser",
             "password": "myPassword"
+        },
+        {
+            "username": "ethan2",
+            "password": "ethan2"
+        },
+        {
+            "username": "ethan1",
+            "password": "ethan1"
+        },
+        {
+            "username": "1234",
+            "password": "1234"
+        },
+        {
+            "username": "65",
+            "password": "65"
+        },
+        {
+            "username": "123456",
+            "password": "123456"
         }
     ]
 }

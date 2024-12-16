@@ -1,21 +1,50 @@
 {
     "watchlists": {
         "ethan": [
-            "The Hangover"
+            {
+                "title": "Here Comes the Boom",
+                "photo_url": "static/images/here_comes_the_boom.jpg"
+            },
+            {
+                "title": "Bob Marley: One Love",
+                "photo_url": "static/images/bob_marley.jpg"
+            },
+            {
+                "title": "The Bikeriders",
+                "photo_url": "static/images/the-bikeriders.jpg"
+            },
+            {
+                "title": "Joker",
+                "photo_url": "static/images/joker.jpg"
+            }
         ],
-        "anotheruser": [
-            "The Hangover"
+        "ethan2": [],
+        "ethan1": [],
+        "1234": [
+            {
+                "title": "Grease",
+                "photo_url": "static/images/grease.jpg"
+            }
         ],
-        "yo": [
-            "A Beautiful Mind",
-            "The Hangover"
+        "65": [
+            {
+                "title": "Forrest Gump",
+                "photo_url": "static/images/forrest_gump.jpg"
+            },
+            {
+                "title": "Dune",
+                "photo_url": "static/images/dune.jpg"
+            },
+            {
+                "title": "The Blind Side",
+                "photo_url": "static/images/The_Blind_Side.jpg"
+            }
         ],
-        "newUser": [
-            "The Dark Knight"
-        ],
-        "yoyo": [],
-        "myUser": [
-            "Get Out"
+        "123456": [
+            {
+                "title": "Superbad",
+                "photo_url": "static/images/superbad.jpg"
+            }
         ]
     }
 }

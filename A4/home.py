@@ -4,7 +4,7 @@ import json
 app = Flask(__name__)
 app.secret_key = 'ethan'
 
-
+# Load user file for the login page
 def load_users():
     try:
         with open('user.json') as user_file:
@@ -21,6 +21,7 @@ def home():
     session['user_responses'] = {}
     return render_template('home.html')
 
+#register page, allows users to create a new account
 @app.route('/register', methods=['GET', 'POST'])
 def register():
     if request.method == 'POST':
@@ -44,7 +45,7 @@ def register():
     
     return render_template('register.html')
 
-# Login route
+# Login page
 @app.route('/login', methods=['GET', 'POST'])
 def login():
     if request.method == 'POST':
@@ -64,7 +65,7 @@ def logout():
     session.pop('username', None)
     return redirect(url_for('home'))
 
-# Quiz route
+# the form to determine what the users preferences are. 
 @app.route('/quiz', methods=['GET', 'POST'])
 def quiz():
     if 'username' not in session:
@@ -80,7 +81,6 @@ def quiz():
                 session['question_num'] = question_num
                 return redirect(url_for('result'))
         else:
-            # Capture user response
             user_answer = request.form.get("answer", "").strip()
             if user_answer:
                 question_key = question_list[question_num]["question"]
@@ -101,6 +101,7 @@ def quiz():
                            options=question_list[question_num]["options"],
                            progress=progress)
 
+#finds movies that match the prefrences determined by the user. 
 def recommend_movies(user_responses, movies):
     user_genre = user_responses.get('What genre of movie do you like?').lower()
     user_platform = user_responses.get('Which platform do you prefer to watch movies on?').lower()
@@ -109,22 +110,23 @@ def recommend_movies(user_responses, movies):
 
     for genre, movie_list in movies["movies"]["genres"].items():
         if user_genre == genre.lower():
-            print(f"Genre match found: {genre}")  # Debugging
+            print(f"Genre match found: {genre}")  
             for movie in movie_list:
-                print(f"Evaluating movie: {movie['title']}")  # Debugging
+                print(f"Evaluating movie: {movie['title']}")  
                 if user_platform and user_platform not in [p.lower() for p in movie["platform"]]:
-                    print(f"Skipping movie {movie['title']} because platform {movie['platform']} does not match user preference {user_platform}")  # Debugging
+                    print(f"Skipping movie {movie['title']} because platform {movie['platform']} does not match user preference {user_platform}")  
                     continue
                 if user_rating and movie["rating"].upper() != user_rating:
-                    print(f"Skipping movie {movie['title']} because rating {movie['rating']} does not match user preference {user_rating}")  # Debugging
+                    print(f"Skipping movie {movie['title']} because rating {movie['rating']} does not match user preference {user_rating}") 
                     continue
-                print(f"Adding movie {movie['title']} to recommendations")  # Debugging
-                recommended_movies.append(movie['title'])
+                print(f"Adding movie {movie['title']} to recommendations")
+                recommended_movies.append(movie)
 
-    print("Recommended Movies:", recommended_movies)  # Debugging
+    print("Recommended Movies:", recommended_movies)
     return recommended_movies
 
 
+#displays watchlist created by the user. 
 @app.route('/watchlist') 
 def watchlist(): 
     if 'username' not in session: 
@@ -137,6 +139,7 @@ def watchlist():
         user_watchlist = watchlist_data['watchlists'].get(username, []) 
         return render_template('watchlist.html', watchlist=user_watchlist)
 
+#adds movies to the watchlist when the button is clicked
 @app.route('/add_to_watchlist', methods=['POST'])
 def add_to_watchlist():
     if 'username' not in session:
@@ -144,13 +147,21 @@ def add_to_watchlist():
 
     username = session['username']
     movie_title = request.form.get('movie_title')
+    movie_photo_url = request.form.get('movie_photo_url')
+    
+    if not movie_title or not movie_photo_url:
+        flash("Movie title or photo URL is missing.")
+        return redirect(url_for('result'))
+
+    new_movie = {'title': movie_title, 'photo_url': movie_photo_url}
     
     with open('watchlist.json', 'r+') as file:
         watchlist_data = json.load(file)
         if username not in watchlist_data['watchlists']:
             watchlist_data['watchlists'][username] = []
-        if movie_title not in watchlist_data['watchlists'][username]:
-            watchlist_data['watchlists'][username].append(movie_title)
+        
+        if not any(movie['title'] == movie_title for movie in watchlist_data['watchlists'][username]):
+            watchlist_data['watchlists'][username].append(new_movie)
             file.seek(0)
             json.dump(watchlist_data, file, indent=4)
             file.truncate()
@@ -158,6 +169,8 @@ def add_to_watchlist():
     flash(f"{movie_title} has been added to your watchlist!")
     return redirect(url_for('result'))
 
+
+#removes movies from watchlist when the button is clicked
 @app.route('/remove_from_watchlist', methods=['POST'])
 def remove_from_watchlist():
     if 'username' not in session:
@@ -169,15 +182,21 @@ def remove_from_watchlist():
     with open('watchlist.json', 'r+') as file:
         watchlist_data = json.load(file)
         if 'watchlists' in watchlist_data and username in watchlist_data['watchlists']:
-            if movie_title in watchlist_data['watchlists'][username]:
-                watchlist_data['watchlists'][username].remove(movie_title)
-                file.seek(0)
-                json.dump(watchlist_data, file, indent=4)
-                file.truncate()
+            user_watchlist = watchlist_data['watchlists'][username]
+            for movie in user_watchlist:
+                if movie['title'] == movie_title:
+                    user_watchlist.remove(movie)
+                    break
+            
+            file.seek(0)
+            json.dump(watchlist_data, file, indent=4)
+            file.truncate()
     
     flash(f"{movie_title} has been removed from your watchlist.")
     return redirect(url_for('watchlist'))
 
+
+#displays recommended movies after quiz has been completed. 
 @app.route('/result')
 def result():
     if 'username' not in session:
@@ -187,16 +206,16 @@ def result():
         movies = json.load(movies_file)
     
     user_responses = session.get('user_responses', {})
-    print("Final User Responses:", user_responses)  # Debugging
+    print("Final User Responses:", user_responses) 
     recommendations = recommend_movies(user_responses, movies)
-    print("Recommendations passed to template:", recommendations)  # Debugging
+    print("Recommendations passed to template:", recommendations) 
 
     return render_template('result.html', recommendations=recommendations)
 
-# Convert questions.json into a list of questions
+#question.json to a list
 with open("questions.json") as question_file:
     question_list = json.load(question_file)["questions"]
 
-# Run the application
+
 if __name__ == "__main__":
     app.run(debug=True)

@@ -7,7 +7,7 @@
         },
         {
             "question": "Which platform do you prefer to watch movies on?",
-            "options": ["Theatrical", "Streaming", "DVD"],
+            "options": ["Disney+", "Netflix", "Max", "Paramount+", "Prime Video", "Hulu", "Peacock"],
             "answer": ""
         },
         {

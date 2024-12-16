@@ -3,12 +3,12 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Your Watchlist</title>
+    <title>Watchlist</title>
     <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
 </head>
 <body>
     <h1>Your Watchlist</h1>
-    
+
     {% with messages = get_flashed_messages() %}
       {% if messages %}
         <ul class="flashes">
@@ -19,18 +19,25 @@
       {% endif %}
     {% endwith %}
 
-    <ul>
-        {% for movie in watchlist %}
-            <li>
-                {{ movie }}
-                <form action="{{ url_for('remove_from_watchlist') }}" method="POST" style="display:inline;">
-                    <input type="hidden" name="movie_title" value="{{ movie }}">
-                    <button type="submit">Remove</button>
-                </form>
-            </li>
-        {% endfor %}
-    </ul>
-    <a href="{{ url_for('home') }}"><button>Back to Home</button></a>
-    <a href="{{ url_for('logout') }}"><button>Logout</button></a>
+    {% if watchlist %}
+        <ul>
+            {% for movie in watchlist %}
+                <li class="movie-container">
+                    <img src="{{ movie.photo_url }}" alt="{{ movie.title }} Poster" class="movie-poster">
+                    <span class="movie-title">{{ movie.title }}</span>
+                    <form class="remove_button" action="{{ url_for('remove_from_watchlist') }}" method="POST" style="display:inline;">
+                        <input type="hidden" name="movie_title" value="{{ movie.title }}">
+                        <button type="submit">Remove from Watchlist</button>
+                    </form>
+                </li>
+            {% endfor %}
+        </ul>
+    {% else %}
+        <p>Your watchlist is empty.</p>
+    {% endif %}
+    
+    <a href="{{ url_for('home') }}"><button>Home</button></a>
+    <a href="{{ url_for('logout') }}"><button>Log Out</button></a>
+
 </body>
 </html>

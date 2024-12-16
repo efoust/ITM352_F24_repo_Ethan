@@ -18,17 +18,24 @@
         </ul>
       {% endif %}
     {% endwith %}
-    <ul>
-        {% for movie in recommendations %}
-            <li>
-                {{ movie }}
-                <form action="{{ url_for('add_to_watchlist') }}" method="POST" style="display:inline;">
-                    <input type="hidden" name="movie_title" value="{{ movie }}">
-                    <button type="submit">Add to Watchlist</button>
-                </form>
-            </li>
-        {% endfor %}
-    </ul>
+    {% if recommendations %}
+        <ul>
+            {% for movie in recommendations %}
+                <li class="movie-container">
+                    <img src="{{ movie.photo_url }}" alt="{{ movie.title }} Poster" class="movie-poster">
+                    <span class="movie-title">{{ movie.title }}</span>
+                    <form class="add_button"action="{{ url_for('add_to_watchlist') }}" method="POST" style="display:inline;">
+                      <input type="hidden" name="movie_title" value="{{ movie.title }}">
+                      <input type="hidden" name="movie_photo_url" value="{{ movie.photo_url }}">
+                      <button type="submit">Add to Watchlist</button>
+                  </form>                  
+                </li>
+            {% endfor %}
+        </ul>
+    {% else %}
+    <p>Sorry, None of Our Movies Matched Your Preferences. </p> 
+    {% endif %}
     <a href="{{ url_for('watchlist') }}"><button>View Watchlist</button></a>
+    <a href="{{ url_for('home') }}"><button>Home</button></a>
 </body>
 </html>

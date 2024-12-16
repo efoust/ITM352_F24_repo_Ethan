@@ -1,0 +1,20 @@
+#removes movies from watchlist when the button is clicked
+@app.route('/remove_from_watchlist', methods=['POST'])
+def remove_from_watchlist():
+    if 'username' not in session:
+        return redirect(url_for('login'))
+
+    username = session['username']
+    movie_title = request.form.get('movie_title')
+    
+    with open('watchlist.json', 'r+') as file:
+        watchlist_data = json.load(file)
+        if 'watchlists' in watchlist_data and username in watchlist_data['watchlists']:
+            if movie_title in watchlist_data['watchlists'][username]:
+                watchlist_data['watchlists'][username].remove(movie_title)
+                file.seek(0)
+                json.dump(watchlist_data, file, indent=4)
+                file.truncate()
+    
+    flash(f"{movie_title} has been removed from your watchlist.")
+    return redirect(url_for('watchlist'))
